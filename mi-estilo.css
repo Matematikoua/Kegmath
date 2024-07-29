@@ -5,15 +5,15 @@ body {
 }
 
 .banner {
-    background-color: #007BFF; /* Color de fondo del banner */
+    background-color: #033e7c; /* Color de fondo del banner */
     color: white; /* Color del texto del banner */
-    text-align: center;
+    text-align: right;
     padding: 50px 20px; /* Espaciado interno (padding) del banner */
 }
 
 .banner h1 {
     margin: 0;
-    font-size: 2.5em; /* Tamaño del texto del nombre */
+    font-size: 4.5em; /* Tamaño del texto del nombre */
 }
 
 .banner p {
