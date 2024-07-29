@@ -46,21 +46,21 @@
 <h2>Observación: La Antiderivada no es única:</h2>
 	<p>Cabe resaltar que si \(\operatorname{G}\) es una antiderivada de alguna función \(f\) entonces 
 	tendremos para todo \(x\in\operatorname{dom} f\) que 
-	\[\frac{\mathrm{d}}{\mathrm{d} x}(\operatorname{G}(x)+c)=f(x)+0=f(x).\]
+	\[\begin{equation}\frac{\mathrm{d}}{\mathrm{d} x}(\operatorname{G}(x)+c)=\operatorname{G}'(x)+0=f(x)+0=f(x).\end{equation}\]
 	Esto nos dice que la función \(\operatorname{G}+c\) es una antiderivada de la función \(f\). Por tanto, se puede concluir  que cualquier par de antiderivadas de una función
     difieren de una constante.
 </p>
 
 <h4>Definición: <strong>(Notación de Leibniz)</strong></h4>
 <p>Sea \(f\colon\operatorname{dom} f\rightarrow\mathbb{R}\)	una función con primitiva \(\operatorname{G}\). Entonces se define 
-
+$$
 \begin{equation}\<label for="int-indef"></label>
 \int\,f(x)\operatorname{d}x =\operatorname{G}(x)+c, \quad c\,\text{  es  cualquier  constante.}
-\end{equation}
+\end{equation}$$
 A la ecuación \ref{int-indef} se le llama integral indefinida de \(f\) con respecto a \(x\), y al proceso de encontrar antiderivadas se le llama integración.
 </p>
 <h4>Definición: <strong>(Componentes de una integral)</strong></h4>
-<p>Sea $f$ una funci\'on con primitiva \(\operatorname{G}\). Entonces las componentes de la integral de \(f\) son:
+<p>Sea \(f\) una función con primitiva \(\operatorname{G}\). Entonces las componentes de la integral de \(f\) son:
 $$\begin{equation}\label{comp-int}
 \displaystyle \int {\color{blue}\underbrace{f(x)}_{\text{Integrando} } }  {\color{red}\overbrace{\operatorname{d} x}^{\text{Diferencial}}}=\stackrel{\text{Primitiva}}{\overbrace{\operatorname{G}(x)}}+{\color{brown}\underbrace{c}_{\text{constante de integración}}}
 \end{equation}$$
