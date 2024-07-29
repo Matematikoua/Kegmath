@@ -58,7 +58,7 @@
                     
                     Para resolver integrales del tipo 
                     
-                    \[] \displaystyle \int f(g(x))g'(x)d x \]
+                    \[ \displaystyle \int f(g(x))g'(x)d x \]
                     
                     primero se busca una primitiva de \(f\). Esto es
                     
@@ -68,7 +68,7 @@
                     
                     \(d u=g'(x)d x\) y por ende podemos resolver la integral indefinida como se sigue:
                     
-                    \( \int f[\underbrace{g(x)}_{u}]\underbrace{g'(x)d x}_{d u}\stackrel{u=g(x)}{=}\int f(u)d u=G(u)+c\stackrel{u=g(x)}{=}G(g(x))+c. \)
+                    \[ \int f[\underbrace{g(x)}_{u}]\underbrace{g'(x)d x}_{d u}\stackrel{u=g(x)}{=}\int f(u)d u=G(u)+c\stackrel{u=g(x)}{=}G(g(x))+c. \]
                     
                     El método dado anteriormente  es llamado método de sustitución. </p>
 <hr>
@@ -93,7 +93,7 @@
 <p>Muchas veces podemos tener integrales indefinidas de la forma \(\displaystyle \int f(g(x))d x\), donde \(f(g(x))\) es un estilo de  "regla de la cadena" 
     pero incompleta, ya que  la función externa está sin derivar. Esto es, hace falta \(g'(x)\).  
     Entonces el método anterior funciona pero haciendo algunas sustituciones nos llevan no a integrales directamente de tabla, pero si a aquellas con un grado de dificultad menor.</p>
-<p>A continuaci\'on se\~nalamos una serie de transformaciones "simples" (por así decirlo) de la diferencial, que serán de gran utilidad de ahora en adelante:</p>
+<p>A continuación señalamos una serie de transformaciones "simples" (por así decirlo) de la diferencial, que serán de gran utilidad de ahora en adelante:</p>
     <ul>
         <li>\(\mathrm{d} x=\mathrm{d}(x+b),\) donde \(b\) es una constante;</li>
         <li> \(\mathrm{d} x=\frac{1}{a} \mathrm{d}(a x),\) donde la constante \(a \neq 0\)</li>
@@ -104,8 +104,7 @@
     </ul>
     <p>En general \[f^{\prime}(x)\mathrm{d} x=\mathrm{d} f(x).\]</p>    
     
-    <p>  
-    Si tenemos integrales \(\displaystyle\int f(x)\mathrm{d} x\) que no se pueden resolver por integración inmediata y tampoco por sustituciones simples dadas anteriormente, 
+    <p>Si tenemos integrales \(\displaystyle\int f(x)\mathrm{d} x\) que no se pueden resolver por integración inmediata y tampoco por sustituciones simples dadas anteriormente, 
     entonces debemos buscar funciones mas complicadas \(u=\varphi(x)\)  tal que al despejar \(x\) de esta función \(\varphi\) y derivar con respecto a \(x\) 
     se obtenga un cambio de la siguiente forma:
     \[f(x)\mathrm{d}x=g(u)\mathrm{d} u\]
@@ -116,7 +115,7 @@
     por medio de alguna sustitución por   al final es dada en función de \(u\), por tanto hay que regresar a la variable original, 
     es decir volver a cambiar a \(u\) por su valor inicial que depende de \(x\). </p>
     
-    
+    <hr>
     
     <h2>A continuación algunos ejemplos.</h2>    
     <h3>Ejemplo 2</h3>
@@ -144,8 +143,7 @@
     
     <h4>  Solución:</h4>
    <p> Para resolver esta integral indefinida, recordemos que usando razones trigonométricas $\tan l=\frac{\sin l}{\cos l}$ podemos transformar  la integral a solucionar as\'i
-        
-    \[\displaystyle \int \tan l\,\mathrm{d} l=\int \frac{\sin l}{\cos l}\,\mathrm{d} l.\]
+          \[\displaystyle \int \tan l\,\mathrm{d} l=\int \frac{\sin l}{\cos l}\,\mathrm{d} l.\]
     Ahora para solucionar \(\displaystyle \int \frac{\sin l}{\cos l}\,\mathrm{d} l\)	observe  que la derivada del \(\cos l\) es \(\displaystyle -\sin l\),
     por tanto si realizamos la sustitución \(u=\cos l\) obtendremos que \(\displaystyle \mathrm{d} u= -\sin l\,\mathrm{d} l\), luego  multiplicamos por \(-1\)
     en ambos lados de la igualdad y  se obtiene \(\displaystyle-\mathrm{d} u= \sin l\,\mathrm{d} l\). Ahora tenemos las herramientas para solucionar nuestra integral
@@ -153,12 +151,7 @@
     \underbrace{\sin l\, \mathrm{d} l}_{-\mathrm{d} u}}\right)\stackrel{\textcolor{red}{u=\cos l}}{=}-\int \frac{\mathrm{d} u}{u}=-\ln |u|+c=-\ln|\cos l|+c.\]</p>
     
 <hr>
-<div class="video-container">
-    <iframe width="1280" height="720" src="https://www.youtube.com/embed/vrziHnv5Rqc" title="27V. Integral de tangente de x, mediante cambio de variable" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-<div class="video-container">
-    <iframe width="1280" height="720" src="https://www.youtube.com/embed/8Ebu8JSOpms" title="INTEGRACIÓN POR SUSTITUCIÓN - Ejercicio 22" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
+
 <h3>Ejemplo 5</h3>
     <p>Resolver \(\displaystyle\int \tan (\sqrt{x})\,\frac{\mathrm{d} x}{\sqrt{x}}\).</p>
     
@@ -172,6 +165,12 @@
     
 <hr>
     <h2>A continuación algunos vídeos: </h2>
+    <div class="video-container">
+        <iframe width="1280" height="720" src="https://www.youtube.com/embed/vrziHnv5Rqc" title="27V. Integral de tangente de x, mediante cambio de variable" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="video-container">
+        <iframe width="1280" height="720" src="https://www.youtube.com/embed/8Ebu8JSOpms" title="INTEGRACIÓN POR SUSTITUCIÓN - Ejercicio 22" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
     <div class="video-container">
         <iframe width="1280" height="720" src="https://www.youtube.com/embed/lEatvrWzbiQ" title="Integración por sustitución | Ejemplo 13 | Coseno" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
