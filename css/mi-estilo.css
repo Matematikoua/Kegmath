@@ -16,7 +16,7 @@ body {
     font-size: 4.5em; /* Tamaño del texto del nombre */
 }
 
-.banner p {
+.banner h2 {
     margin: 10px 0 0;
     font-size: 1.2em; /* Tamaño del texto de la descripción */
 }
