@@ -48,14 +48,76 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
             <h4>Integración inmediata: <strong>(Comparación con la tabla básica)<strong></h4>
-<p>Una función \(\operatorname{G}\) se dice ser una  <em>antiderivada (o primitva)</em> de  \(f\colon\operatorname{dom} f\rightarrow\mathbb{R}\)  si 
-\[
-\operatorname{G}'(x)=\dfrac{\mathrm{d}\operatorname{G}(x)}{\mathrm{d} x}=f(x),\quad \text{para cada \(x\in \operatorname{dom} f\).}
-\]
+<h2>Ejemplo 1</h2>
+   <p> Resolver \(\displaystyle\int \frac{d x}{16+x^{2}}.\)</p>
+    
+    <h3>  Solución:</h3>
+    <p>Observe primero de que tipo es el integrando. En este caso particular nuestro integrando es  \(\displaystyle \frac{1}{16+x^{2}}\). 
+        Comparando en la tabla de integrales inmediatas vemos que nuestro integrando es similar a la función que aparece en la formula 3. 
+        Solo debemos buscar un adecuado número \(a\) cuyo valor al cuadrado sea 16. Esto es, \(a^{2}=16\). Es fácil ver que \(a=4\) y por tanto </p>
+    
+    \[\displaystyle\int\frac{d x}{16+x^{2}}=\int \frac{d x}{4^{2}+x^{2}}=\frac{1}{4}\arctan \left(\frac{x}{4}\right)+c.\]
+    
+    
+    
+   <h2>Ejemplo 2</h2> 
+    <p>Resolver \(\displaystyle\int \frac{d x}{16-x^{2}}.\)</p>
+    
+   <h3>Solución:</h3> 
+   <p> Observe primero de que tipo es la función del integrando. En este caso particular nuestro integrando es  \(\displaystyle \frac{1}{16-x^{2}}\). 
+    Comparando en la tabla de integrales inmediatas vemos que nuestro integrando es similar a la función que aparece en la formula 5. 
+    Solo debemos buscar un adecuado número \(a\) cuyo valor al cuadrado sea 16. Esto es, \(a^{2}=16\). 
+    Es fácil ver que \(a=4\) y por tanto  \[\int\frac{d x}{16-x^{2}}=\int\frac{d x}{4^{2}-x^{2}}=\frac{1}{8}\ln\left|\frac{4+x}{4-x}\right|+c.\] </p>
+    
+    
+    
+   <h2>Ejemplo 3</h2> 
+   <p>Resolver \(\displaystyle\int \frac{d x}{\sqrt{x^{2}-16}}\).</p> 
+    
+    <h3>Solución:</h3>
+   <p> Observe primero de que tipo es la función del integrando. En este caso particular nuestro integrando es  \(\displaystyle \frac{1}{\sqrt{x^{2}-16}}\). 
+    Comparando en la tabla de integrales inmediatas vemos que nuestro integrando es similar a la función que aparece en la formula 6, ya que quien lleva el signo $-$ es el número \(16\).
+    En este caso el número \(a\) es  \(-16\) ya que \(+\times -=-\) y por tanto  \[ \int\frac{d x}{\sqrt{x^{2}-16}}=\int\frac{d x}{\sqrt{x^{2}+(-16)}}=\ln\left|x+\sqrt{x^{2}-16}\right|+c. \]</p>
+    
+    
+    
+    <h2>Ejemplo 4</h2>
+    <p>Resolver \(\displaystyle\int \sec^{2}y d y\).</p>
+    
+    <h3>Solución:</h3>
+   <p> Observe primero de que tipo es la función del integrando. En este caso particular nuestro integrando es  \(\displaystyle \sec^{2}y\). 
+    Recordando las identidades trigonométricas tenemos que \(\displaystyle \sec y=\frac{1}{\cos y}\).  
+    Comparando en la tabla de integrales inmediatas vemos que nuestro integrando es similar a la función que aparece en la formula 12 y por tanto 
+    
+    \[\int\sec^{2}y d y=\int\frac{d y}{\cos^{2}y}=\tan y+c.\] </p>
+    
+    
+    <h2>A continuación algunos vídeos: </h2>
+    
+    
+  <p>  https://www.youtube.com/watch?v=Q9Qo9wNWYpI&list=PL9SnRnlzoyX2Hx03Rezau28CUYSSOwFdf
+    
+    https://www.youtube.com/watch?v=AxyaXLOu7f4&list=PL9SnRnlzoyX2Hx03Rezau28CUYSSOwFdf&index=7
+    
+    https://www.youtube.com/watch?v=6UKWVLVZIog&list=PL9SnRnlzoyX2Hx03Rezau28CUYSSOwFdf&index=9
+    
+    https://www.youtube.com/watch?v=bzs9nJ3DYuI&feature=youtu.be
+    
+    https://www.youtube.com/watch?v=vIET71_KLQE&list=PL9SnRnlzoyX2Hx03Rezau28CUYSSOwFdf&index=12
+    
+    https://www.youtube.com/watch?v=hnXdYgUfvy8&list=PL9SnRnlzoyX2Hx03Rezau28CUYSSOwFdf&index=20
+    
+    https://www.youtube.com/watch?v=ritUUnwL8k4&list=PL9SnRnlzoyX2Hx03Rezau28CUYSSOwFdf&index=22
+    
+    https://www.youtube.com/watch?v=KcoI_-fyd3o&list=PL9SnRnlzoyX2Hx03Rezau28CUYSSOwFdf&index=24
+    
+    https://www.youtube.com/watch?v=gZr2Nwzpwwo&list=PL9SnRnlzoyX39hvLuyYgFEIdCXFXI3xaU&index=21
+    
+    https://www.youtube.com/watch?v=t6ikNoew1v8&list=PL9SnRnlzoyX39hvLuyYgFEIdCXFXI3xaU&index=23
 </p> 
-<h1>Videos de YouTube</h1>
+
     <div class="video-container">
-        <iframe src="https://youtu.be/Q9Qo9wNWYpI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="1280" height="721" src="https://www.youtube.com/embed/Q9Qo9wNWYpI?list=PL9SnRnlzoyX2Hx03Rezau28CUYSSOwFdf" title="01. Integral de una constante" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
     <footer>
         <p>&copy; "Work hard in silence, let success make the noise".</p>
