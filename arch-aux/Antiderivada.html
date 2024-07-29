@@ -34,7 +34,7 @@
             <h4>Definición: <strong>(Antiderivada o Primitiva)<strong></h4>
 <p>Una función \(\operatorname{G}\) se dice ser una  <em>antiderivada (o primitva)</em> de  \(f\colon\operatorname{dom} f\rightarrow\mathbb{R}\)  si 
 \[
-\operatorname{G}'(x)=\dfrac{\mathrm{d}\operatorname{G}(x)}{\mathrm{d} x}=f(x),\quad \text{para cada \(x\in \operatorname{dom} f\).}
+\operatorname{G}'(x)=\dfrac{\mathrm{d}\operatorname{G}(x)}{\mathrm{d}x}=f(x),\quad \text{para cada \(x\in \operatorname{dom} f\).}
 \]
 </p> 
 <h3> Ejemplo: <strong>algunas antiderivadas</strong> </h3>
@@ -47,11 +47,12 @@
 <h2 style="color: rgb(163, 4, 4);">Observación: La Antiderivada no es única:</h2>
 	<p style="color: rgb(163, 4, 4);">Cabe resaltar que si \(\operatorname{G}\) es una antiderivada de alguna función \(f\) entonces 
 	tendremos para todo \(x\in\operatorname{dom} f\) que 
-	\[\begin{equation}\frac{\mathrm{d}}{\mathrm{d} x}(\operatorname{G}(x)+c)=\operatorname{G}'(x)+0=f(x)+0=f(x).\end{equation}\]
+	\[\begin{equation}\frac{\mathrm{d}}{\mathrm{d}x}(\operatorname{G}(x)+c)=\operatorname{G}'(x)+0=f(x)+0=f(x).\end{equation}\]
 	Esto nos dice que la función \(\operatorname{G}+c\) es una antiderivada de la función \(f\). Por tanto, se puede concluir  que cualquier par de antiderivadas de una función
     difieren de una constante.
 </p>
 <hr>
+<div class="caja-solida">
 <h4>Definición: <strong>(Notación de Leibniz)</strong></h4>
 <p>Sea \(f\colon\operatorname{dom} f\rightarrow\mathbb{R}\)	una función con primitiva \(\operatorname{G}\). Entonces se define 
 <div>$$
@@ -60,16 +61,17 @@
 \end{equation}$$</div>
 A la ecuación \eqref{int-indef} se le llama integral indefinida de \(f\) con respecto a \(x\), y al proceso de encontrar antiderivadas se le llama integración.
 </p>
+</div>
 <h4>Definición: <strong>(Componentes de una integral)</strong></h4>
 <p>Sea \(f\) una función con primitiva \(\operatorname{G}\). Entonces las componentes de la integral de \(f\) son:
 <div>$$\begin{equation}\label{comp-int}
-\displaystyle \int {\color{blue}\underbrace{f(x)}_{\text{Integrando} } }  {\color{red}\overbrace{\operatorname{d} x}^{\text{Diferencial}}}=\stackrel{\text{Primitiva}}{\overbrace{\operatorname{G}(x)}}+{\color{brown}\underbrace{c}_{\text{constante de integración}}}
+\displaystyle \int {\color{blue}\underbrace{f(x)}_{\text{Integrando} } }  {\color{red}\overbrace{\operatorname{d}x}^{\text{Diferencial}}}=\stackrel{\text{Primitiva}}{\overbrace{\operatorname{G}(x)}}+{\color{brown}\underbrace{c}_{\text{constante de integración}}}
 \end{equation}$$</div>
 </p>
 <h4>Teorema</h4>
 <p>	Sea \(f\) una función con primitiva \(\operatorname{G}\). Entonces 
   <div> $$ \begin{equation}
-	\int \operatorname{G}'(x )\operatorname{d} x=\operatorname{G}(x)+c.
+	\int \operatorname{G}'(x )\operatorname{d}x=\operatorname{G}(x)+c.
 	\end{equation}$$</div>
 </p>
 <button class="button" onclick="window.location.href='metodos-int.html'">Ir a Métodos de Integración</button>

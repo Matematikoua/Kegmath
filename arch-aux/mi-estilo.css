@@ -20,3 +20,18 @@ body {
     margin: 10px 0 0;
     font-size: 1.2em; /* Tamaño del texto de la descripción */
 }
+.caja-solida {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 20px;
+}
+.caja-punteada {
+    border: 2px dotted red;
+    padding: 10px;
+    margin: 20px;
+}
+.caja-rayada {
+    border: 2px dashed blue;
+    padding: 10px;
+    margin: 20px;
+}
