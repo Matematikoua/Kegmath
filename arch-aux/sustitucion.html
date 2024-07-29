@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antiderivadas</title>
+     <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="mi-estilo.css">
+    <title>Botones de Navegación</title>
+    <style>
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #022a55;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .button:hover {
+            background-color: #022a55;
+        }
+    </style>
+    <style>
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+            margin-bottom: 20px; /* Espacio inferior */
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <h1>Métodos de Integración: Sustitución</h1>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+            <h2><strong>Por ahora un poco de teoría<strong></h2>
+                <p> Recordemos que para derivar una composicion de funciones \(f(g(x))\) se usa la regla de la cadena:
+
+                    \[ \dfrac{d f}{d x}=\dfrac{d f}{d x}\dfrac{d u}{d x},\quad \text{ donde}\, u=g(x). \]
+                    
+                    Por tanto,  una primitiva \(\operatorname{G}\) de $\(f'(g(x))g'(x)\) es \(\operatorname{G}(x)=f(g(x))\) y así las  integrales indefinidas de la forma
+                    
+                    \(\displaystyle \int f'(g(x))g'(x)\,d x\) se  simplifican a integrales que pueden resolverse por el método de  integracion inmediata.
+                    
+                    Para resolver integrales del tipo 
+                    
+                    \[] \displaystyle \int f(g(x))g'(x)d x \]
+                    
+                    primero se busca una primitiva de \(f\). Esto es
+                    
+                    \[\displaystyle\int f(y)d y=G(y)+c. \]
+                    
+                    Ahora usando metodos dados para el calculo de diferenciales de funciones podemos  obtener para  \(u=g(x)\) el diferencial 
+                    
+                    \(d u=g'(x)d x\) y por ende podemos resolver la integral indefinida como se sigue:
+                    
+                    \( \int f[\underbrace{g(x)}_{u}]\underbrace{g'(x)d x}_{d u}\stackrel{u=g(x)}{=}\int f(u)d u=G(u)+c\stackrel{u=g(x)}{=}G(g(x))+c. \)
+                    
+                    El método dado anteriormente  es llamado método de sustitución. </p>
+<hr>
+<h3>Ejemplo 1</h3>
+   <p> Resolver  \(\displaystyle\int 2x\sin (x^{2})d x\)</p>
+    
+    <h4>  Solución:</h4>
+    <p>Notemos que \(f(x)=\sin x\) y \(g(x)=x^{2}\) por tanto la composición de estas dos funciones da lugar a \(f(g(x))=\sin(x^{2})\). Ahora la derivada  de \(g(x)=x^{2}\) es \(g^{\prime}(x)=2x\) por tanto
+                    
+        \[ \displaystyle\int 2x\sin (x^{2})d x=\int \sin(x^{2})\cdot (2xd x)=\int \sin(\underbrace{x^{2}}_{g(x)})\left(\underbrace{2xd x}_{g^{\prime}(x)}\right)\stackrel{t=x^{2}}{=} \int \sin td t \]
+        
+            usando la tabla de integrales inmediatas obtenemos que lo anterior es igual a:
+        
+            \( =-\cos t +c \)
+        
+        cambiando a nuestra variable original \(x\) obtenemos:
+        
+         \[ \stackrel{t=x^{2}}{=}-\cos (x^{2})+c. \] </p>
+    
+    
+<hr>
+<p>Muchas veces podemos tener integrales indefinidas de la forma \(\displaystyle \int f(g(x))d x\), donde \(f(g(x))\) es un estilo de  "regla de la cadena" 
+    pero incompleta, ya que  la función externa está sin derivar. Esto es, hace falta \(g'(x)\).  
+    Entonces el método anterior funciona pero haciendo algunas sustituciones nos llevan no a integrales directamente de tabla, pero si a aquellas con un grado de dificultad menor.</p>
+<p>A continuaci\'on se\~nalamos una serie de transformaciones "simples" (por así decirlo) de la diferencial, que serán de gran utilidad de ahora en adelante:</p>
+    <ul>
+        <li>\(\mathrm{d} x=\mathrm{d}(x+b),\) donde \(b\) es una constante;</li>
+        <li> \(\mathrm{d} x=\frac{1}{a} \mathrm{d}(a x),\) donde la constante \(a \neq 0\)</li>
+        <li>\(\mathrm{d} x=\frac{1}{a} \mathrm{d}(a x+b) \quad(a \neq 0)\)</li>
+        <li>\(x \mathrm{d} x=\frac{1}{2} \mathrm{d}\left(x^{2}\right)\)</li>
+        <li>\(\sin x \mathrm{d} x=-\mathrm{d}(\cos x)\)</li>
+        <li>\(\cos x \mathrm{d} x=\mathrm{d}(\sin x)\)</li>
+    </ul>
+    <p>En general \[f^{\prime}(x)\mathrm{d} x=\mathrm{d} f(x).\]</p>    
+    
+    <p>  
+    Si tenemos integrales \(\displaystyle\int f(x)\mathrm{d} x\) que no se pueden resolver por integración inmediata y tampoco por sustituciones simples dadas anteriormente, 
+    entonces debemos buscar funciones mas complicadas \(u=\varphi(x)\)  tal que al despejar \(x\) de esta función \(\varphi\) y derivar con respecto a \(x\) 
+    se obtenga un cambio de la siguiente forma:
+    \[f(x)\mathrm{d}x=g(u)\mathrm{d} u\]
+    donde la integral  \(\displaystyle\int g(u)\mathrm{d} u=G(u)+C\) se pueda resolver de forma inmediata con la tabla. Entonces 
+    \[\int f(x)\mathrm{d} x\stackrel{u=\varphi(x)}{=}\int g(u)\mathrm{d} u=\underbrace{G(u)+C}_{{\color{red}\text{Aquí la respuesta es dada con u mas no con la variable original x}}}=G(\varphi(x))+C\]
+    Es de suma importancia saber reducir la expresión diferencial dada $f(x) \mathrm{d} x$ a la forma de $f(x) \mathrm{d} x=g(u) \mathrm{d} u$
+    donde $u$ es una función de \(x\) y \(g\) es una función más fácil de integrar que \(f\). Además, es de resaltar que si una integral indefinida es solucionada
+    por medio de alguna sustitución por   al final es dada en función de \(u\), por tanto hay que regresar a la variable original, 
+    es decir volver a cambiar a \(u\) por su valor inicial que depende de \(x\). </p>
+    
+    
+    
+    <h2>A continuación algunos ejemplos.</h2>    
+    <h3>Ejemplo 2</h3>
+    <p>Resolver \(\displaystyle \int \ln y\,\frac{\mathrm{d} y}{y}.\)</p>
+    
+    <h4>  Solución:</h4>
+   <p> Para resolver esta integral indefinida, recordemos primero que la derivada del \(\ln y\) es \(\displaystyle \frac{1}{y}\) por tanto si realizamos la sustitución \(u=\ln y\)
+     obtendremos que \(\displaystyle \mathrm{d} u= \frac{\mathrm{d} y}{y}\) y por tanto
+    \[\int \ln y\,\frac{\mathrm{d} y}{y}\stackrel{\textcolor{red}{u=\ln y}}{=}\int u\,\mathrm{d} u=\frac{u^{2}}{2}+c\stackrel{\textcolor{red}{u=\ln y}}{=}\frac{(\ln y)^{2}}{2}+c.\]</p>
+<hr> 
+    
+    
+    <h3>Ejemplo 3</h3> 
+   <p>Resolver \(\displaystyle\int \frac{e^{t}\mathrm{d} t}{e^{t}-1}\).</p> 
+    
+   <h4>  Solución:</h4>
+   <p> Para resolver esta integral indefinida, recordemos primero que la derivada del \(e^{t}-1\) es \(\displaystyle e^{t}\) por tanto si realizamos la sustitución \(u=e^{t}-1\)
+    obtendremos que \(\displaystyle \mathrm{d} u= e^{t}\,\mathrm{d} t\) y por tanto
+    \[\int \frac{e^{t}\mathrm{d} t}{e^{t}-1}=\int \dfrac{1}{{\color{red}\underbrace{e^{t}-1}_{u}}}\left({\color{blue}\underbrace{e^{t}\mathrm{d} t}_{\mathrm{d} u}}\right)\stackrel{\textcolor{red}{u=e^{t}-1}}{=}\int \frac{\mathrm{d} u}{u}=\ln |u|+c\stackrel{\textcolor{red}{u=e^{t}-1}}{=}\ln|e^{t}-1|+c.\]</p>
+    
+    <hr> 
+    
+    <h3>Ejemplo 4</h3>
+    <p>Resolver \(\displaystyle\int \tan l\,\mathrm{d} l\).</p>
+    
+    <h4>  Solución:</h4>
+   <p> Para resolver esta integral indefinida, recordemos que usando razones trigonométricas $\tan l=\frac{\sin l}{\cos l}$ podemos transformar  la integral a solucionar as\'i
+        
+    \[\displaystyle \int \tan l\,\mathrm{d} l=\int \frac{\sin l}{\cos l}\,\mathrm{d} l.\]
+    Ahora para solucionar \(\displaystyle \int \frac{\sin l}{\cos l}\,\mathrm{d} l\)	observe  que la derivada del \(\cos l\) es \(\displaystyle -\sin l\),
+    por tanto si realizamos la sustitución \(u=\cos l\) obtendremos que \(\displaystyle \mathrm{d} u= -\sin l\,\mathrm{d} l\), luego  multiplicamos por \(-1\)
+    en ambos lados de la igualdad y  se obtiene \(\displaystyle-\mathrm{d} u= \sin l\,\mathrm{d} l\). Ahora tenemos las herramientas para solucionar nuestra integral
+    \[\displaystyle \int \tan l\,\mathrm{d} l=\int \frac{1}{{\color{red}\underbrace{\cos l}_{u}}}\,\left({\color{blue}
+    \underbrace{\sin l\, \mathrm{d} l}_{-\mathrm{d} u}}\right)\stackrel{\textcolor{red}{u=\cos l}}{=}-\int \frac{\mathrm{d} u}{u}=-\ln |u|+c=-\ln|\cos l|+c.\]</p>
+    
+<hr>
+<h3>Ejemplo 5</h3>
+    <p>Resolver \(\displaystyle\int \tan (\sqrt{x})\,\frac{\mathrm{d} x}{\sqrt{x}}\).</p>
+    
+    <h4>  Solución:</h4>
+   <p> Para resolver esta integral indefinida, recordemos que  la derivada de \(\sqrt{x}\)
+     es \(\displaystyle \frac{1}{2\sqrt{x}}\), por tanto si realizamos la sustitución \(u=\sqrt{x}\)
+      obtendremos que \(\displaystyle \mathrm{d} u= \frac{\mathrm{d} x}{2\sqrt{x}}\), luego  multiplicamos por \(2\)  en ambos lados de la igualdad
+      y  se obtiene \(\displaystyle2\mathrm{d} u= \frac{\mathrm{d} x}{\sqrt{x}}\). Ahora tenemos las herramientas para solucionar nuestra integral
+      y para ello usaremos el ejemplo anterior así
+    \[\int \tan (\sqrt{x})\,\frac{\mathrm{d} x}{\sqrt{x}}=\int \tan \left({\color{red}\underbrace{\sqrt{x}_{u}}}\right)\,\left(\color{blue}\underbrace{\frac{\mathrm{d} x}{\sqrt{x}}}_{2\mathrm{d} u}\right)\stackrel{\textcolor{red}{u=\sqrt x}}{=}2\int \tan u\,\mathrm{d} u=-2\ln |\cos u|+c=-2\ln|\cos \sqrt{x}|+c.\]</p>
+    
+<hr>
+    <h2>A continuación algunos vídeos: </h2>
+    
+    <div class="video-container">
+        <iframe width="1280" height="721" src="https://www.youtube.com/embed/Q9Qo9wNWYpI?list=PL9SnRnlzoyX2Hx03Rezau28CUYSSOwFdf" title="01. Integral de una constante" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="video-container">
+            <iframe width="1280" height="721" src="https://www.youtube.com/embed/AxyaXLOu7f4?list=PL9SnRnlzoyX2Hx03Rezau28CUYSSOwFdf" title="06. Integral de una potencia de x (x a la quinta)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="video-container">
+        <iframe width="1280" height="721" src="https://www.youtube.com/embed/6UKWVLVZIog?list=PL9SnRnlzoyX2Hx03Rezau28CUYSSOwFdf" title="08. Integral de x con exponente en denominador (exp. negativo)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<div class="video-container">
+    <iframe width="1280" height="721" src="https://www.youtube.com/embed/vIET71_KLQE?list=PL9SnRnlzoyX2Hx03Rezau28CUYSSOwFdf" title="11. Integral de raíz cúbica de x (potencia fraccionaria)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<div class="video-container">
+    <iframe width="1280" height="721" src="https://www.youtube.com/embed/hnXdYgUfvy8?list=PL9SnRnlzoyX2Hx03Rezau28CUYSSOwFdf" title="20. Integral de radicales en el denominador (Potencia fraccionaria negativa)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<div class="video-container">
+    <iframe width="1280" height="721" src="https://www.youtube.com/embed/ritUUnwL8k4?list=PL9SnRnlzoyX2Hx03Rezau28CUYSSOwFdf" title="19. Integral de una división de polinomio entre monomio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<div class="video-container">
+    <iframe width="1176" height="735" src="https://www.youtube.com/embed/KcoI_-fyd3o?list=PL9SnRnlzoyX2Hx03Rezau28CUYSSOwFdf" title="22. Integral de una multiplicación: polinomio por raíz" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<div class="video-container">
+    <iframe width="1280" height="721" src="https://www.youtube.com/embed/gZr2Nwzpwwo?list=PL9SnRnlzoyX39hvLuyYgFEIdCXFXI3xaU" title="18. Integral de un binomio al cuadrado" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<div class="video-container">
+    <iframe width="1280" height="720" src="https://www.youtube.com/embed/t6ikNoew1v8?list=PL9SnRnlzoyX39hvLuyYgFEIdCXFXI3xaU" title="Integral de binomio al cuadrado con raíz" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<div class="video-container">
+    <iframe width="980" height="735" src="https://www.youtube.com/embed/bzs9nJ3DYuI" title="INTEGRALES DIRECTAS - Ejercicio 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+    <footer>
+        <p>&copy; "Work hard in silence, let success make the noise".</p>
+    </footer>
+</body>
+</html>
