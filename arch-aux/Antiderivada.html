@@ -43,7 +43,7 @@
 		<li>Sea \(f(x)=e^{x}\). Entonces una antiderivada de \(f\) es \(\operatorname{G}(x)=e^{x}+10000\) ya que \(\operatorname{G}'(x)=f(x)\).</li>
     </ul>
 	
-<h2>Observación: La Antiderivada no es \'unica:</h2>
+<h2>Observación: La Antiderivada no es única:</h2>
 	<p>Cabe resaltar que si \(\operatorname{G}\) es una antiderivada de alguna función \(f\) entonces 
 	tendremos para todo \(x\in\operatorname{dom} f\) que 
 	\[\frac{\mathrm{d}}{\mathrm{d} x}(\operatorname{G}(x)+c)=f(x)+0=f(x).\]
@@ -52,23 +52,24 @@
 </p>
 
 <h4>Definición: <strong>(Notación de Leibniz)</strong></h4>
-<p>Sea \(f\colon\operatorname{dom} f\rightarrow\Real\)	una función con primitiva \(\operatorname{G}\). Entonces se define 
+<p>Sea \(f\colon\operatorname{dom} f\rightarrow\mathbb{R}\)	una función con primitiva \(\operatorname{G}\). Entonces se define 
 
 \begin{equation}\<label for="int-indef"></label>
-\int\,f(x)\dd x =\operatorname{G}(x)+c, \quad c\,\text{  es  cualquier  constante.}
+\int\,f(x)\operatorname{d}x =\operatorname{G}(x)+c, \quad c\,\text{  es  cualquier  constante.}
 \end{equation}
 A la ecuación \ref{int-indef} se le llama integral indefinida de \(f\) con respecto a \(x\), y al proceso de encontrar antiderivadas se le llama integración.
 </p>
 <h4>Definición: <strong>(Componentes de una integral)</strong></h4>
-<p>Sea $f$ una funci\'on con primitiva $\G$. Entonces las componentes de la integral de $f$ son:
-\begin{equation}\label{comp-int}
-\displaystyle \int {\color{blue}\underbrace{f(x)}_{\text{Integrando} } }  {\color{red}\overbrace{\dd x}^{\text{Diferencial}}}=\stackrel{\text{Primitiva}}{\overbrace{\G(x)}}+{\color{brown}\underbrace{c}_{\text{constante de integración}}}
-\end{equation}
+<p>Sea $f$ una funci\'on con primitiva \(\operatorname{G}\). Entonces las componentes de la integral de \(f\) son:
+$$\begin{equation}\label{comp-int}
+\displaystyle \int {\color{blue}\underbrace{f(x)}_{\text{Integrando} } }  {\color{red}\overbrace{\operatorname{d} x}^{\text{Diferencial}}}=\stackrel{\text{Primitiva}}{\overbrace{\operatorname{G}(x)}}+{\color{brown}\underbrace{c}_{\text{constante de integración}}}
+\end{equation}$$
 </p>
 <h4>Teorema</h4>
-<p>	Sea $f$ una funci\'on con primitiva $\G$. Entonces \begin{equation}
-	\int \G'(x )\dd x=\G(x)+c.
-	\end{equation}
+<p>	Sea \(f\) una función con primitiva \(\operatorname{G}\). Entonces 
+   $$ \begin{equation}
+	\int \operatorname{G}'(x )\operatorname{d} x=\operatorname{G}(x)+c.
+	\end{equation}$$
 </p>
 <button class="button" onclick="window.location.href='metodos-int.html'">Ir a Métodos de Integración</button>
     <button class="button" onclick="window.location.href='pagina2.html'">Ir a Página 2</button>
