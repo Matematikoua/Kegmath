@@ -5,7 +5,7 @@ body {
 }
 
 .banner {
-    background-color: #090681; /* Color de fondo del banner */
+    background-color: #007BFF; /* Color de fondo del banner */
     color: white; /* Color del texto del banner */
     text-align: center;
     padding: 50px 20px; /* Espaciado interno (padding) del banner */
