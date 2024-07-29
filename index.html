@@ -4,53 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Página Web</title>
-    <style>
-        /* Estilos CSS para el diseño */
-        header {
-            text-align: center;
-            padding: 20px 0;
-        }
-        nav {
-            text-align: center;
-        }
-        section {
-            margin: 20px;
-        }
-        footer {
-            text-align: center;
-            padding: 20px 0;
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <img src="imagenes/logo.jpg" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="#">Principal</a></li>
+                <li><a href="#">Hoja de Vida</a></li>
+                <li><a href="#">Cursos</a></li>
+                <li><a href="#">English</a></li>
+                <li><a href="#">Más</a></li>
+            </ul>
+        </nav>
+        <img src="images/header.jpg" alt="Header Image">
     </header>
-    <nav>
-        <a href="#seccion1">Hoja de Vida</a>
-        <a href="#seccion2">Cursos</a>
-        <a href="#seccion3">English</a>
-        <a href="#seccion4">Mas</a>
-    </nav>
-    <section id="seccion1">
-        <h2>Descripción de la persona</h2>
-        <p>Aquí puedes escribir una descripción detallada de la persona.</p>
-    </section>
-    <section id="seccion2">
-        <h2>Sección 2</h2>
-        <p>Contenido de la sección 2.</p>
-    </section>
-    <section id="seccion3">
-        <h2>Sección 3</h2>
-        <p>Contenido de la sección 3.</p>
-    </section>
-    <section id="seccion4">
-        <h2>Sección 4</h2>
-        <p>Contenido de la sección 4.</p>
-    </section>
+    <main>
+        <section class="welcome-section">
+            <img src="imagenes/foto-head.jpg" alt="Profile Image">
+            <div class="welcome-text">
+                <h2>Bienvenidos!</h2>
+                <p>Mi nombre es Kevin Esmeral García, colombiano de nacimiento y Matemático de profesión...</p>
+                <p><a href="mailto:kevin.esmeral@ucaldas.edu.co">kevin.esmeral@ucaldas.edu.co</a></p>
+            </div>
+        </section>
+    </main>
     <footer>
-        <h2>Ubicación</h2>
-        <iframe src="https://www.google.com/maps?hl=es&ie=UTF8&ll=5.054836,-75.492622&q=a+25-251,+Cl.+64b+%2325-65,+Manizales,+Caldas,+Colombia+(Universidad+De+Caldas+%E2%80%94+Ciencias+Agropecuarias)&sll=5.054836,-75.492622&spn=0.00575,0.017853&sspn=0.00575,0.017853&t=roadmap&z=16" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <p>© 2024 Kevin Esmeral García</p>
     </footer>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
