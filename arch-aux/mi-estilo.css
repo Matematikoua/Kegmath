@@ -35,3 +35,29 @@ body {
     padding: 10px;
     margin: 20px;
 }
+.button2 {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #010d1a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+.button2:hover {
+    background-color: #0056b3;
+}
+.button3 {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #580202;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+.button3:hover {
+    background-color: #e93c3c;
+}
