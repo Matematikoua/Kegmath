@@ -6,21 +6,32 @@
     <title>Mi Página</title>
      <!-- Enlace al archivo CSS -->
     <link rel="stylesheet" href="css/mi-estilo.css">
+    <title>Botones de Navegación</title>
+    <style>
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <div class="banner">
         <h1>Ph.D. Kevin M. Esmeral García</h1>
     </div>
     <h1>Bienvenido!</h1>
-                <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-            <h2>Integral indefinida</h2>
-                <h3>definicion <strong>(Antiderivada o Primitiva)<strong></h3>
-	 <p>Una función \(\operatorname{G}\) se dice ser una  <em>antiderivada (o primitva)</em> de  \(f\colon\operatorname{dom} f\rightarrow\mathbb{R}\)  si 
-	\[
-	\operatorname{G}'(x)=\dfrac{\mathrm{d}\operatorname{G}(x)}{\mathrm{d} x}=f(x),\quad \text{para cada \(x\in \operatorname{dom} f\).}
-	\]
-</p> 
-	           
+               
+    <button class="button" onclick="window.location.href='Antiderivada'">Ir a Página 1</button>
+    <button class="button" onclick="window.location.href='pagina2.html'">Ir a Página 2</button>
+    <button class="button" onclick="window.location.href='pagina3.html'">Ir a Página 3</button>     
 
     <footer>
         <p>&copy; 2024 Mi primer Sitio Web</p>
