@@ -61,3 +61,23 @@ body {
 .button3:hover {
     background-color: #eb6d6d;
 }
+.video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Dos columnas de tamaño mínimo 300px */
+            gap: 20px; /* Espacio entre los videos */
+            max-width: 100%;
+}
+.video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+            height: 0;
+            overflow: hidden;
+            background: #000;
+}
+.video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+}
