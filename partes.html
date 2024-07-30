@@ -32,9 +32,9 @@
     <hr>
     <div class="button3">
             <h2><strong>MUCHO CUIDADO!<strong></h2>
+            </div>
                 <p> Dentro de las propiedades de integral se observa que la integral de una multiplicación de funciones no es necesariamente la multiplicación de integrales. Esto es:
-                    $$\displaystyle \int \dd x=\int \frac{x}{x}\dd x\neq \left(\int x\,\dd x\right)\left(\int \frac{\dd x}{x}\right)$$
-                    \begin{ejemplo} \textbf{Ojo }.\\
+                    $$\displaystyle \int \operatorname{d}\hspace{-1pt}x=\int \frac{x}{x}\operatorname{d}\hspace{-1pt}x\neq \left(\int x\,\operatorname{d}\hspace{-1pt}x\right)\cdot\left(\int \frac{\operatorname{d}\hspace{-1pt}x}{x}\right)$$
                 Cabe resaltar que 
                 \(\displaystyle \int \operatorname{d}\hspace{-1pt}x=x+c\),  sin embargo como \(1=\dfrac{x}{x}\) entonces
                 $$\int \frac{x}{x}\operatorname{d}\hspace{-1pt}x=x+c,\quad \text{pero}\, \left(\int x\,\operatorname{d}\hspace{-1pt}x\right)\left(\int \frac{\operatorname{d}\hspace{-1pt}x}{x}\right)=(x^{2}+c)(\ln |x|+c),\quad \text{por lo tanto la igualdad no se tiene.}$$
@@ -42,28 +42,30 @@
                      de polinomios la cual es la suma de integrales. Sin embargo para funciones que no son polinomios no se puede proceder de esta manera, 
                      por ejemplo si tenemos la función \(x\ln x\). 
                 </p>
-            </div>
+           
 <hr>  
-  <div class="button2">           
+        <div class="button2"><h2>Algo de teoría!</h2></div> 
       <p>      
             
             Notemos que si queremos hallar diferenciales de una multiplicaci\'on de funciones se procede por la regla de la multiplicaci\'on para derivadas, como se sigue
-            $$\dd(uv)=v\,\dd u+u\,\dd v.$$
-            Por tanto, si integramos a ambos lados tendremos que por Teorema \ref{Int-deri-f=f} que
-            \begin{equation}\label{uv=udv-vdu}
-            uv=\int v\,\dd u+\int u\,\dd v\quad \text{equivalentemente}\,uv-\int v\,\dd u=\int u\,\dd v.
-            \end{equation}
+            $$\operatorname{d}\hspace{-1pt}(uv)=v\,\operatorname{d}\hspace{-1pt}u+u\,\operatorname{d}\hspace{-1pt}v.$$
+            Por tanto, si integramos a ambos lados tendremos lo siguiente:
+           $$ \begin{equation}\label{uv=udv-vdu}
+          \tag{P}  uv=\int v\,\operatorname{d}\hspace{-1pt} u+\int u\,\operatorname{d}\hspace{-1pt}v\quad \text{equivalentemente}\,uv-\int v\,\operatorname{d}\hspace{-1pt}u=\int u\,\operatorname{d}\hspace{-1pt}v.
+            \end{equation}$$
         </p>
-            Este m\'etodo \eqref{uv=udv-vdu} puede ser aplicado para resolver integrales cuyo integrando es una multiplicaci\'on de funciones $f(x)g(x)$ y las primitivas de cada funci\'on $f$ y$g$ son faciles de obtener.   A \'este m\'etodo se le llama \emph{integraci\'on por partes} y se procede como se sigue:
-            \begin{equation}\label{por-partes}
-            \hspace{-1cm}\stackrel{ \displaystyle\int f(x) g(x)\dd x= \int\textcolor{red}{\underbrace{f(x)}}\stackrel{\dd v}{\textcolor{blue}{\overbrace{g(x)\,\dd x}}}=f(x)g(x)-\int v\, \dd u,\quad \text{donde}\,v=\int g(x)\,\dd x,\,\text{y}\, \dd u=f'(x)\,\dd x.}{\hspace{-7.7cm}u}
-            \end{equation}
-            En esta er\'a digital, para recordar el m\'etodo de integraci\'on por partes muchos docentes y estudiantes usan una forma muy jocosa de recordar el m\'etodo de integraci\'on por partes. El cual es
-            \begin{itemize}
-                \item [] \begin{center}
+            Este método \(\eqref{P}\) puede ser aplicado para resolver integrales cuyo integrando es una multiplicación de funciones \(f(x)g(x)\)
+            y las primitivas de cada función \(f\) y \(g\) son faciles de obtener.   A este método se le llama <em>integración por partes</em> y se procede como se sigue:
+            $$\begin{equation}\label{por-partes}
+            \tag{PP}\hspace{-1cm}\stackrel{ \displaystyle\int f(x) g(x)\dd x= \int\textcolor{red}{\underbrace{f(x)}}\stackrel{\dd v}{\textcolor{blue}{\overbrace{g(x)\,\dd x}}}=f(x)g(x)-\int v\, \dd u,\quad \text{donde}\,v=\int g(x)\,\dd x,\,\text{y}\, \dd u=f'(x)\,\dd x.}{\hspace{-7.7cm}u}
+            \end{equation}$$
+            En esta era digital, para recordar el método de integración por partes muchos docentes y estudiantes usan una forma muy jocosa de recordar el método de integración
+             por partes. El cual es
+            <ul>
+                <li>\(\begin{center}
                 $	\stackrel{\displaystyle \textcolor{red}{u \dd v=uv-v\dd u}}{\overbrace{\text{\textcolor{red}{u}n \textcolor{red}{d}\'ia \textcolor{red}{v}\'i \textcolor{red}{u}na \textcolor{red}{v}aca  \textcolor{red}{v}estida \textcolor{red}{d}e \textcolor{red}{u}niforme}}}$
-                \end{center}
-</div> 
+                \end{center}\)</li>
+            </ul>
               
 <hr>
 <div class="button2">
