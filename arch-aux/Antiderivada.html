@@ -67,7 +67,7 @@
     <h2 class="button2">Definición: <strong>(Notación de Leibniz)</strong></h2>
         <p>Sea \(f\colon\operatorname{dom} f\rightarrow\mathbb{R}\)	una función con primitiva \(\operatorname{G}\). Entonces se define 
                             \[\begin{equation}\label{int-indef}
-                       \tag{*} \int\,f(x)\operatorname{d}\hspace{-1pt}x =\operatorname{G}(x)+c, \quad c\,\text{  es  cualquier  constante.}
+                       \tag{1} \int\,f(x)\operatorname{d}\hspace{-1pt}x =\operatorname{G}(x)+c, \quad c\,\text{  es  cualquier  constante.}
                 \end{equation}\]
                   A la ecuación \(\eqref{int-indef}\) se le llama integral indefinida de \(f\) con respecto a \(x\), y al proceso de encontrar antiderivadas se le llama integración.
         </p>
@@ -77,7 +77,7 @@
     <h2 class=" button2">Definición: <strong>(Componentes de una integral)</strong></h2>
         <p>Sea \(f\) una función con primitiva \(\operatorname{G}\). Entonces las componentes de la integral de \(f\) son:
             \[\begin{equation}\label{comp-int}
-                 \tag{**}   \displaystyle \int {\color{blue}\underbrace{f(x)}_{\text{Integrando} } }  {\color{red}\overbrace{\operatorname{d}\hspace{-1pt}x}^{\text{Diferencial}}}=\stackrel{\text{Primitiva}}{\overbrace{\operatorname{G}(x)}}+{\color{brown}\underbrace{c}_{\text{constante de integración}}}
+                 \tag{2}   \displaystyle \int {\color{blue}\underbrace{f(x)}_{\text{Integrando} } }  {\color{red}\overbrace{\operatorname{d}\hspace{-1pt}x}^{\text{Diferencial}}}=\stackrel{\text{Primitiva}}{\overbrace{\operatorname{G}(x)}}+{\color{brown}\underbrace{c}_{\text{constante de integración}}}
                 \end{equation}\]
             
         </p>
@@ -87,10 +87,27 @@
    <h2 >Teorema</h2>
 <p>	Sea \(f\) una función con primitiva \(\operatorname{G}\). Entonces 
    $$ \begin{equation}
-	\int \operatorname{G}'(x )\operatorname{d}\hspace{-1pt}x=\operatorname{G}(x)+c.
+	\tag{3}\int \operatorname{G}'(x )\operatorname{d}\hspace{-1pt}x=\operatorname{G}(x)+c.
 	\end{equation}$$
 </p>
 </div>
+
+<hr>
+<div class="button2">
+    <h1>Reglas básicas de la integral indefinida</h1>
+</div>
+<p>Para realizar el proceso de integración de funciones se tienen en cuenta las siguientes reglas que son consecuencia de las propiedades de la derivada de una función.
+    <ul>
+        <li> Si \(constante\) es un número cualquiera entonces la integral de la función \(constante \cdot f\) es \(constante\)-veces la integral de \(f\). Esto es, 
+        $$\int constante\cdot f(x)\operatorname{d}x=constante\cdot\int f(x)\operatorname{d} x.$$</li>
+        <li> Si \(f\) y \(g\) son funciones entonces la integral de la suma \(f+g\) es la suma de las integrales. Esto es, 
+        $$\int\left[f(x)+g(x)\right]\operatorname{d}x= \int f(x)\operatorname{d}x+\int g(x)\operatorname{d}x.$$</li>
+        <li> Sea \(f\) una función con antiderivada \(\operatorname{G}\). Entonces la variable  \(x\) es muda. Esto es,
+        $$\int f(x)\operatorname{d}x=\int f(y) \operatorname{d}y.$$
+    </li>
+    </ul>
+
+</p>
 
 <h2  class= "button3">Es hora de empezar a ver los métodos de solución de integrales más comunes</h2>
 <hr>
