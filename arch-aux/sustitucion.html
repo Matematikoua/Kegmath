@@ -37,7 +37,10 @@
             }
         };
     </script>
+    <hr>
+    <div class="button3">
             <h2><strong>Por ahora un poco de teoría<strong></h2>
+    </div>
                 <p> Recordemos que para derivar una composicion de funciones \(f(g(x))\) se usa la regla de la cadena:
 
                     \[ \dfrac{d f}{d x}=\dfrac{d f}{d x}\dfrac{d u}{d x},\quad \text{ donde}\, u=g(x). \]
@@ -62,9 +65,10 @@
                     
                     El método dado anteriormente  es llamado método de sustitución. </p>
 <hr>
-<h3>Ejemplo 1</h3>
-   <p> Resolver  \(\displaystyle\int 2x\sin (x^{2})d x\)</p>
-    
+<div class="button2">
+<h3>Ejemplo 1: Resolver  \(\displaystyle\int 2x\sin (x^{2})d x\)</h3>
+</div>
+     
     <h4>  Solución:</h4>
     <p>Notemos que \(f(x)=\sin x\) y \(g(x)=x^{2}\) por tanto la composición de estas dos funciones da lugar a \(f(g(x))=\sin(x^{2})\). Ahora la derivada  de \(g(x)=x^{2}\) es \(g^{\prime}(x)=2x\) por tanto
                     
@@ -80,6 +84,9 @@
     
     
 <hr>
+<div class="button3">
+    <h3>Nota 1:</h3>
+</div>
 <p>Muchas veces podemos tener integrales indefinidas de la forma \(\displaystyle \int f(g(x))d x\), donde \(f(g(x))\) es un estilo de  "regla de la cadena" 
     pero incompleta, ya que  la función externa está sin derivar. Esto es, hace falta \(g'(x)\).  
     Entonces el método anterior funciona pero haciendo algunas sustituciones nos llevan no a integrales directamente de tabla, pero si a aquellas con un grado de dificultad menor.</p>
@@ -92,8 +99,11 @@
         <li>\(\sin x \mathrm{d} x=-\mathrm{d}(\cos x)\)</li>
         <li>\(\cos x \mathrm{d} x=\mathrm{d}(\sin x)\)</li>
     </ul>
-    <p>En general \[f^{\prime}(x)\mathrm{d} x=\mathrm{d} f(x).\]</p>    
-    
+    <p>En general \[f^{\prime}(x)\mathrm{d} x=\mathrm{d} f(x).\]</p>  
+    <hr>  
+    <div class="button3">
+        <h3>Nota 2:</h3>
+    </div>
     <p>Si tenemos integrales \(\displaystyle\int f(x)\mathrm{d} x\) que no se pueden resolver por integración inmediata y tampoco por sustituciones simples dadas anteriormente, 
     entonces debemos buscar funciones mas complicadas \(u=\varphi(x)\)  tal que al despejar \(x\) de esta función \(\varphi\) y derivar con respecto a \(x\) 
     se obtenga un cambio de la siguiente forma:
@@ -106,10 +116,13 @@
     es decir volver a cambiar a \(u\) por su valor inicial que depende de \(x\). </p>
     
     <hr>
+    <div class="button3">
+        <h2>A continuación algunos ejemplos.</h2>
+    </div>
+    <div class="button2">
+        <h3>Ejemplo 2: Resolver \(\displaystyle \int \ln y\,\frac{\mathrm{d} y}{y}.\)</h3>
+        </div>
     
-    <h2>A continuación algunos ejemplos.</h2>    
-    <h3>Ejemplo 2</h3>
-    <p>Resolver \(\displaystyle \int \ln y\,\frac{\mathrm{d} y}{y}.\)</p>
     
     <h4>  Solución:</h4>
    <p> Para resolver esta integral indefinida, recordemos primero que la derivada del \(\ln y\) es \(\displaystyle \frac{1}{y}\) por tanto si realizamos la sustitución \(u=\ln y\)
@@ -117,9 +130,10 @@
     \[\int \ln y\,\frac{\mathrm{d} y}{y}\stackrel{\textcolor{red}{u=\ln y}}{=}\int u\,\mathrm{d} u=\frac{u^{2}}{2}+c\stackrel{\textcolor{red}{u=\ln y}}{=}\frac{(\ln y)^{2}}{2}+c.\]</p>
 <hr> 
     
+<div class="button2">
+   <h3>Ejemplo 3: Resolver \(\displaystyle\int \frac{e^{t}\mathrm{d} t}{e^{t}-1}\).</h3> 
+</div>
     
-    <h3>Ejemplo 3</h3> 
-   <p>Resolver \(\displaystyle\int \frac{e^{t}\mathrm{d} t}{e^{t}-1}\).</p> 
     
    <h4>  Solución:</h4>
    <p> Para resolver esta integral indefinida, recordemos primero que la derivada del \(e^{t}-1\) es \(\displaystyle e^{t}\) por tanto si realizamos la sustitución \(u=e^{t}-1\)
@@ -127,9 +141,10 @@
     \[\int \frac{e^{t}\mathrm{d} t}{e^{t}-1}=\int \dfrac{1}{{\color{red}\underbrace{e^{t}-1}_{u}}}\left({\color{blue}\underbrace{e^{t}\mathrm{d} t}_{\mathrm{d} u}}\right)\stackrel{\textcolor{red}{u=e^{t}-1}}{=}\int \frac{\mathrm{d} u}{u}=\ln |u|+c\stackrel{\textcolor{red}{u=e^{t}-1}}{=}\ln|e^{t}-1|+c.\]</p>
     
     <hr> 
+    <div class="button2">
+      <h3>Ejemplo 4: Resolver \(\displaystyle\int \tan l\,\mathrm{d} l\).</h3>
+        </div>
     
-    <h3>Ejemplo 4</h3>
-    <p>Resolver \(\displaystyle\int \tan l\,\mathrm{d} l\).</p>
     
     <h4>  Solución:</h4>
    <p> Para resolver esta integral indefinida, recordemos que usando razones trigonométricas $\tan l=\frac{\sin l}{\cos l}$ podemos transformar  la integral a solucionar as\'i
@@ -141,9 +156,10 @@
     \underbrace{\sin l\, \mathrm{d} l}_{-\mathrm{d} u}}\right)\stackrel{\textcolor{red}{u=\cos l}}{=}-\int \frac{\mathrm{d} u}{u}=-\ln |u|+c=-\ln|\cos l|+c.\]</p>
     
 <hr>
+<div class="button2">
+   <h3>Ejemplo 5: Resolver \(\displaystyle\int \tan (\sqrt{x})\,\frac{\mathrm{d} x}{\sqrt{x}}\).</h3>
+</div>
 
-<h3>Ejemplo 5</h3>
-    <p>Resolver \(\displaystyle\int \tan (\sqrt{x})\,\frac{\mathrm{d} x}{\sqrt{x}}\).</p>
     
     <h4>  Solución:</h4>
    <p> Para resolver esta integral indefinida, recordemos que  la derivada de \(\sqrt{x}\)
@@ -186,7 +202,7 @@
         <iframe width="1280" height="720" src="https://www.youtube.com/embed/lEatvrWzbiQ" title="Integración por sustitución | Ejemplo 13 | Coseno" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 <div class="video-container">
-    <iframe width="1280" height="718" src="https://www.youtube.com/embed/yStsL2p45zQ" title="33. Integral de raíz cuadrada de un polinomio (binomio)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="1280" height="720" src="https://www.youtube.com/embed/c4SOnyZw_uI" title="Integración por sustitución | Ejemplo 7.1 Raíz" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 </div>
 <hr>
