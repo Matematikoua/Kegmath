@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integración Inmediata</title>
+     <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="arch-aux/mi-estilo.css">
+    <title>Botones de Navegación</title>
+    <style>
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #022a55;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .button:hover {
+            background-color: #022a55;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <h1>Métodos de Integración: Integración por partes</h1>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <hr>
+    <div class="button3">
+            <h2><strong>MUCHO CUIDADO!<strong></h2>
+                <p> Dentro de las propiedades de integral se observa que la integral de una multiplicación de funciones no es necesariamente la multiplicación de integrales. Esto es:
+                    $$\displaystyle \int \dd x=\int \frac{x}{x}\dd x\neq \left(\int x\,\dd x\right)\left(\int \frac{\dd x}{x}\right)$$
+                    \begin{ejemplo} \textbf{Ojo }.\\
+                Cabe resaltar que 
+                \(\displaystyle \int \operatorname{d}\hspace{-1pt}x=x+c\),  sin embargo como \(1=\dfrac{x}{x}\) entonces
+                $$\int \frac{x}{x}\operatorname{d}\hspace{-1pt}x=x+c,\quad \text{pero}\, \left(\int x\,\operatorname{d}\hspace{-1pt}x\right)\left(\int \frac{\operatorname{d}\hspace{-1pt}x}{x}\right)=(x^{2}+c)(\ln |x|+c),\quad \text{por lo tanto la igualdad no se tiene.}$$
+                    Luego, para afrontar integrales con  multiplicación de polinomios \(f(x)g(x)\) se puede multiplicar término a término y tendríamos una integral de suma
+                     de polinomios la cual es la suma de integrales. Sin embargo para funciones que no son polinomios no se puede proceder de esta manera, 
+                     por ejemplo si tenemos la función \(x\ln x\). 
+                </p>
+            </div>
+<hr>  
+  <div class="button2">           
+      <p>      
+            
+            Notemos que si queremos hallar diferenciales de una multiplicaci\'on de funciones se procede por la regla de la multiplicaci\'on para derivadas, como se sigue
+            $$\dd(uv)=v\,\dd u+u\,\dd v.$$
+            Por tanto, si integramos a ambos lados tendremos que por Teorema \ref{Int-deri-f=f} que
+            \begin{equation}\label{uv=udv-vdu}
+            uv=\int v\,\dd u+\int u\,\dd v\quad \text{equivalentemente}\,uv-\int v\,\dd u=\int u\,\dd v.
+            \end{equation}
+        </p>
+            Este m\'etodo \eqref{uv=udv-vdu} puede ser aplicado para resolver integrales cuyo integrando es una multiplicaci\'on de funciones $f(x)g(x)$ y las primitivas de cada funci\'on $f$ y$g$ son faciles de obtener.   A \'este m\'etodo se le llama \emph{integraci\'on por partes} y se procede como se sigue:
+            \begin{equation}\label{por-partes}
+            \hspace{-1cm}\stackrel{ \displaystyle\int f(x) g(x)\dd x= \int\textcolor{red}{\underbrace{f(x)}}\stackrel{\dd v}{\textcolor{blue}{\overbrace{g(x)\,\dd x}}}=f(x)g(x)-\int v\, \dd u,\quad \text{donde}\,v=\int g(x)\,\dd x,\,\text{y}\, \dd u=f'(x)\,\dd x.}{\hspace{-7.7cm}u}
+            \end{equation}
+            En esta er\'a digital, para recordar el m\'etodo de integraci\'on por partes muchos docentes y estudiantes usan una forma muy jocosa de recordar el m\'etodo de integraci\'on por partes. El cual es
+            \begin{itemize}
+                \item [] \begin{center}
+                $	\stackrel{\displaystyle \textcolor{red}{u \dd v=uv-v\dd u}}{\overbrace{\text{\textcolor{red}{u}n \textcolor{red}{d}\'ia \textcolor{red}{v}\'i \textcolor{red}{u}na \textcolor{red}{v}aca  \textcolor{red}{v}estida \textcolor{red}{d}e \textcolor{red}{u}niforme}}}$
+                \end{center}
+</div> 
+              
+<hr>
+<div class="button2">
+<h3>Ejemplo 1: Resolver \(\displaystyle\displaystyle\int x\ln x\,\operatorname{d}\hspace{-1pt}x.\)</h3>
+</div>   
+    <h4>  Solución:</h4>
+    <p>La integral se resolverá mediante el método de integración por partes.  Sea \(u=\ln x\) y \(\operatorname{d}v=x\).
+                Entonces 
+        $$\operatorname{d}\hspace{-1pt}u=\frac{\operatorname{d}\hspace{-1pt}x}{x},\quad v=\int \operatorname{d}\hspace{-1pt}v=\int x\,\operatorname{d}\hspace{-1pt}x=\frac{x^{2}}{2}.$$
+        Por tanto, 
+        $$\begin{align*}
+        \int x\,\ln x\,\operatorname{d}\hspace{-1pt}x= \frac{x^{2} \ln x}{2}-\int \frac{x^{2}\operatorname{d}\hspace{-1pt}x}{2x}=\frac{x^{2}\ln x}{2}-\int x\,\operatorname{d}\hspace{-1pt}x=\frac{x^{2}\ln x}{2}-\frac{x^{2}}{4}+c.
+        \end{align*}$$
+    </p>
+    
+<hr>
+<div class="button3">Observación:</div>
+<p>Si se le hace dificíl elegir cual función es \(u\) y cual es \(\operatorname{d}v\), debemos recordar que solo podemos elegir dos combinaciones. 
+    En algunos casos si tenemos polinomios,  la derivada disminuye en un grado a tal  polinomio, mientras que la integral sube un grado. 
+</p>
+
+<hr>
+<div class="button2">
+    <h3>Ejemplo 2: Resolver la siguiente integral indefinida usando el método de integración por partes
+        \(\displaystyle\int \sec^{3}x\operatorname{d}\hspace{-1pt}x.\)</h3>
+</div>     
+    <h4>  Solución:</h4>
+   <p> $$\begin{align*}
+    \int \sec^{3}x\mathrm{d} x&=\int\underbrace{\sec^{2}x}_{\color{red} u}\underbrace{\sec x\dd x}_{\color{blue}\mathrm{d} v}=\sec^{2}x \tan x-\int 2\sec x\tan^{2} x\mathrm{d} x\\
+    &=\sec^{2} x\tan x-2\int \sec x\left(\sec^{2}x-1\right)\mathrm{d}x\\
+    &=\sec^{2}x\tan x-2\int \sec^{3}x\mathrm{d}x+2\int \sec x\mathrm{d}x\\
+    &=\sec^{2}x\tan x-2\int \sec^{3}x\mathrm{d}x+2\tan x+c.
+\end{align*}$$</p>
+
+<hr> 
+    
+<div class="button2"> 
+    <h3>Ejemplo 3: Resolver \(\displaystyle\int \frac{d x}{\sqrt{x^{2}-16}}\).</h3> 
+</div>
+   <h4>  Solución:</h4>
+   <p> Observe primero de que tipo es la función del integrando. En este caso particular nuestro integrando es  \(\displaystyle \frac{1}{\sqrt{x^{2}-16}}\). 
+    Comparando en la tabla de integrales inmediatas vemos que nuestro integrando es similar a la función que aparece en la formula 6, ya que quien lleva el signo $-$ es el número \(16\).
+    En este caso el número \(a\) es  \(-16\) ya que \(+\times -=-\) y por tanto  \[ \int\frac{d x}{\sqrt{x^{2}-16}}=\int\frac{d x}{\sqrt{x^{2}+(-16)}}=\ln\left|x+\sqrt{x^{2}-16}\right|+c. \]</p>
+  
+    <hr> 
+<div class="button2">   
+    <h3>Ejemplo 4: Resolver \(\displaystyle\int \sec^{2}y d y\).</h3>
+</div>  
+    <h4>  Solución:</h4>
+   <p> Observe primero de que tipo es la función del integrando. En este caso particular nuestro integrando es  \(\displaystyle \sec^{2}y\). 
+    Recordando las identidades trigonométricas tenemos que \(\displaystyle \sec y=\frac{1}{\cos y}\).  
+    Comparando en la tabla de integrales inmediatas vemos que nuestro integrando es similar a la función que aparece en la formula 12 y por tanto 
+    
+    \[\int\sec^{2}y\, d y=\int\frac{d y}{\cos^{2}y}=\tan y+c.\] </p>
+
+<hr>
+<div class="button3"> 
+    <h2>A continuación algunos vídeos: </h2>
+</div>
+<hr>
+<div class="video-grid">
+    <div class="video-container">
+        <iframe width="1280" height="720" src="https://www.youtube.com/embed/ViQVu8ogSvA?list=PL9SnRnlzoyX0b_uh-4ixsls13cs8xdXoj" title="102. Integración por partes: ¿De dónde sale la fórmula?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="video-container">
+        <iframe width="400" height="225" src="https://www.youtube.com/embed/ViQVu8ogSvA" title="102. Integración por partes: ¿De dónde sale la fórmula?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</div>
+
+<div class="video-grid">
+    <div class="video-container">
+        <iframe width="400" height="225" src="https://www.youtube.com/embed/BETtnGGLATU" title="Integración por Partes - Ejercicio 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="video-container">
+        <iframe width="400" height="225" src="https://www.youtube.com/embed/93kW5colCAU" title="Integración por partes | Introducción" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</div>
+
+<div class="video-grid">
+    <div class="video-container">
+        <iframe width="400" height="225" src="https://www.youtube.com/embed/6nu-snYlA0Q" title="Integración por partes | Ejemplo 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="video-container">
+        <iframe width="400" height="225" src="https://www.youtube.com/embed/6nu-snYlA0Q" title="Integración por partes | Ejemplo 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</div>
+
+<hr>
+<div class="button3">
+    <h1>Ir al siguiente método de integración</h1>
+</div>
+<button class="button" onclick="window.location.href='sustitucion.html'">Ir a Integración por sustitución</button>
+<button class="button" onclick="window.location.href='metodos-int.html'">Regresar al tema de Métodos de Integración</button> 
+<a href="index.html" class="button4"><i class="fas fa-home"></i>Inicio</a>
+
+<hr>
+   <footer>
+        <p>&copy; "Work hard in silence, let success make the noise" </p> 
+        <p>― Frank Ocean</p>
+    </footer>
+</body>
+</html>
