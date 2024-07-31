@@ -122,10 +122,16 @@ body {
     cursor: pointer;
     margin: 5px;
 }
+.image-container {
+    width: 100%;
+    text-align: center;
+}
 .custom-image {
     width: 300px; /* Ajusta el ancho de la imagen */
     height: auto; /* Mantiene la proporción de la imagen */
     border: 2px solid #000; /* Añade un borde negro */
     border-radius: 10px; /* Bordes redondeados */
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    display: block;
+    margin: 0 auto; /* Centra la imagen horizontalmente */
 }
