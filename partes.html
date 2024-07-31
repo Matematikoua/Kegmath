@@ -73,7 +73,7 @@
 <p>A la hora de resolver un ejercicio por integración por partes, muchas veces toca experimentar un poco con las elecciones de quien será \(u\) y quien será \(\operatorname{d}v\).
     Para hacer una elección correcta de  \(u\) se sugiere usar la técnica del I.L.A.T.E. </p>
     <div class="image-container">
-        <img src="imagenes/ilate-2.png" alt="Descripción de la imagen" class="custom-image">
+        <img src="imagenes/ilate.png" alt="Descripción de la imagen" class="custom-image">
     </div>
 <p>La técnica  establece un orden prioritario para poder elegir quien será \(u\). Desde arriba hacia abajo va de mayor a menor prioridad.</p>
 <hr>
@@ -81,8 +81,9 @@
 <h3>Ejemplo 1: Resolver \(\displaystyle\displaystyle\int x\ln x\,\operatorname{d}\hspace{-1pt}x.\)</h3>
 </div>   
     <h4>  Solución:</h4>
-    <p>La integral se resolverá mediante el método de integración por partes.  Sea \(u=\ln x\) y \(\operatorname{d}v=x\).
-                Entonces 
+    <p>La integral se resolverá mediante el método de integración por partes usando ILATE. Note que tenemos en nuestra integral una función que es logarítmica \(\ln x\) y una función 
+        algebraica \(x\) (tiene exponente 1), la técnica del ILATE nos dice entonces que la parte \(u\) será la de mayor prioridad, en este caso \(u=\ln x\) y por tanto \(\operatorname{d}\hspace{-1pt}v\)
+        será         \(\operatorname{d}v=x\).                 Entonces 
         $$\operatorname{d}\hspace{-1pt}u=\frac{\operatorname{d}\hspace{-1pt}x}{x},\quad v=\int \operatorname{d}\hspace{-1pt}v=\int x\,\operatorname{d}\hspace{-1pt}x=\frac{x^{2}}{2}.$$
         Por tanto, 
         $$\begin{align*}

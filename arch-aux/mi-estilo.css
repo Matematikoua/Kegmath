@@ -129,9 +129,9 @@ body {
     height: 100vh; /* Hace que el contenedor ocupe toda la altura de la ventana */
 }
 .custom-image {
-    width: 300px; /* Ajusta el ancho de la imagen */
+    width: 400px; /* Ajusta el ancho de la imagen */
     height: auto; /* Mantiene la proporción de la imagen */
     border: 2px solid #000; /* Añade un borde negro */
-    border-radius: 10px; /* Bordes redondeados */
+    border-radius: 1px; /* Bordes redondeados */
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Sombra */
 }
