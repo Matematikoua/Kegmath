@@ -127,7 +127,7 @@ body {
     text-align: center;
 }
 .custom-image {
-    width: 1500px; /* Ajusta el ancho de la imagen */
+    width: 750px; /* Ajusta el ancho de la imagen */
     height: auto; /* Mantiene la proporción de la imagen */
     border: 2px solid #000; /* Añade un borde negro */
     border-radius: 10px; /* Bordes redondeados */
