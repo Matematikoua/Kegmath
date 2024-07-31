@@ -123,11 +123,11 @@ body {
     margin: 5px;
 }
 .image-container {
-    width: 50%;
+   /* width: 50%;*/
     text-align: center;
 }
 .custom-image {
-    width: 300px; /* Ajusta el ancho de la imagen */
+    width: 500px; /* Ajusta el ancho de la imagen */
     height: auto; /* Mantiene la proporción de la imagen */
     border: 2px solid #000; /* Añade un borde negro */
     border-radius: 10px; /* Bordes redondeados */
