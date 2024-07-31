@@ -135,3 +135,10 @@ body {
     display: block;
     margin: 0 auto; /* Centra la imagen horizontalmente */
 }
+.svg-container {
+    text-align: center;
+}
+.svg-container img {
+    max-width: 100%;
+    height: auto;
+}
