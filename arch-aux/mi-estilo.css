@@ -24,7 +24,7 @@ body {
 
 .encab {
     width: 100vw; /* Ocupa todo el ancho del contenedor */
-    height: 40vh; /* Ajusta la altura del banner */
+    height: 50vh; /* Ajusta la altura del banner */
     background-image: url(../imagenes/tablero-cinves-1.png); /* Ruta a la imagen */
     background-size: cover; /* La imagen cubre todo el contenedor */
     background-position: right; /* Centra la imagen en el contenedor */
