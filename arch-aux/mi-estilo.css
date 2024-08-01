@@ -24,7 +24,7 @@ body {
 
 .encab {
     width: 100vw; /* Ocupa todo el ancho del contenedor */
-    height: 20vh; /* Ajusta la altura del banner */
+    height: 40vh; /* Ajusta la altura del banner */
     background-image: url(/imagenes/tablero-cinves-1.png); /* Ruta a la imagen */
     background-size: cover; /* La imagen cubre todo el contenedor */
     background-position: left; /* Centra la imagen en el contenedor */
@@ -32,13 +32,13 @@ body {
     display: flex; /* Usa Flexbox para alinear el contenido */
 }
 .encab h1 {
-    margin: 0;
-    align-items: right; /* Centra el contenido verticalmente */
-    justify-content:center; /* Centra el contenido horizontalmente */
+    margin: 0px;
+    align-items: center; /* Centra el contenido verticalmente */
+    justify-content:right; /* Centra el contenido horizontalmente */
     color: white; /* Color del texto */
     text-align: right; /* Alinea el texto en el centro */
     font-size: 4.5em; /* Tamaño del texto */
-    padding: 20px; /* Espaciado interno */
+    padding: 0px; /* Espaciado interno */
     box-sizing: border-box; /* Incluye el padding en el cálculo del tamaño */
 }
 
