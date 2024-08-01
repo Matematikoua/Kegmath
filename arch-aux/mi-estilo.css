@@ -2,11 +2,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    text-align: center;
 }
 
 .banner {
@@ -18,7 +13,7 @@ body {
 
 .banner h1 {
     margin: 0;
-    font-size: 3.5em; /* Tamaño del texto del nombre */
+    font-size: 4.5em; /* Tamaño del texto del nombre */
 }
 
 .banner h2 {
