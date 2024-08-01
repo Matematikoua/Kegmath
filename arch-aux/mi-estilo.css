@@ -20,6 +20,20 @@ body {
     margin: 10px 0 0;
     font-size: 1.2em; /* Tamaño del texto de la descripción */
 }
+.banner-img {
+    width: 100%;
+    height: 300px; /* Ajusta la altura según tus necesidades */
+    background-image: url('/imagenes/tablero-cinves-1.jpg'); /* Ruta a la imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir el banner */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    display: flex;
+    align-items: center; /* Centra el contenido verticalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    color: white; /* Color del texto sobre el banner */
+    text-align: center; /* Alineación del texto */
+    font-size: 24px; /* Tamaño del texto */
+}
 .caja-solida {
     border: 2px solid black;
     padding: 10px;
