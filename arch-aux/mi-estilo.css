@@ -40,7 +40,7 @@ body {
     font-size: 4.5em; /* Tamaño del texto */
     font-weight: bold;
     direction: rtl;
-    padding: 25px; /* Espaciado interno */
+    padding: 15px; /* Espaciado interno */
     box-sizing: border-box; /* Incluye el padding en el cálculo del tamaño */
 }
 
