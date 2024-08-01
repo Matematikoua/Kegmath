@@ -142,3 +142,9 @@ body {
     max-width: 100%;
     height: auto;
 }
+.center-horizontal {
+    width: 50%; /* Ajusta el ancho según sea necesario */
+    margin: 0 auto; /* Centra el div horizontalmente */
+    background-color: lightblue; /* Solo para visualización */
+    text-align: center; /* Centra el contenido del texto dentro del div */
+}
