@@ -151,15 +151,16 @@ body {
     text-align: center;
 }
 .custom-image {
-    max-width: 100%; /* Ajusta el ancho de la imagen */
+    max-width: 50%; /* Ajusta el ancho de la imagen */
     height: auto; /* Mantiene la proporción de la imagen */
 }
 .svg-container {
     text-align: center;
 }
 .svg-container img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
+    width: auto;
 }
 .center-horizontal {
     width: 50%; /* Ajusta el ancho según sea necesario */
