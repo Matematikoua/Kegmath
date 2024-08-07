@@ -12,7 +12,7 @@
             padding: 10px 20px;
             font-size: 16px;
             color: white;
-            background-color: #022a55;
+           background-color: #022a55;
             border: none;
             border-radius: 5px;
             cursor: pointer;
@@ -21,8 +21,17 @@
         .button:hover {
             background-color: #0056b3;
         }
+
     </style>
-    
+   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+   <script type="text/x-mathjax-config">
+       MathJax = {
+           tex: {
+               tags: 'ams'
+           }
+       };
+   </script> 
 </head>
 <body>
     <div class="banner">
@@ -44,10 +53,17 @@
             <div class="button2">
                 <h2>Cursos impartidos</h2>
             </div>               
-    <button class="button" onclick="window.location.href='calculo-integral'">Ir a Cálculo Integral</button>
-    <button class="button" onclick="window.location.href='pagina2.html'">Ir a Página 2</button>
-    <button class="button" onclick="window.location.href='pagina3.html'">Ir a Página 3</button>     
-<hr>
+   
+ <div class="columna">
+        <div class="columna" onclick="window.location.href='https://sites.google.com/view/kegmath/cursos/c%C3%A1lculo-diferencial?authuser=0'">
+          <button class="button">  \[\dfrac{\mathrm{d}f(x)}{\mathrm{d}x}=f'(x)\] Ir a Cálculo diferencial</button></div>
+   
+          <div class="columna" onclick="window.location.href='calculo-integral.html'">
+            <button class="button">  \[\int_{a}^{b} f(x)\,\mathrm{d}x\] Ir a Cálculo Integral</button></div>
+            <div class="columna" onclick="window.location.href='https://sites.google.com/view/kegmath/cursos/ecuaciones-diferenciales/curso-e-d-o?authuser=0'">
+                <button class="button">  \[y'+p(x)y=q(x)\] Ir a Ecuaciones diferenciales ordinarias</button></div>
+        </div>
+            <hr>
 
     <footer>
         <p>* Según convocatoria MINCIENCIAS 2021.</p>

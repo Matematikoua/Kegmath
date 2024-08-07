@@ -23,7 +23,7 @@ body {
     padding: 10px 20px;
     font-size: 16px;
     color: white;
-    background-color: #0056b3;
+    background-color: rgb(30,108,147);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -67,9 +67,29 @@ body {
     padding: 10px 20px;
     font-size: 16px;
     color: rgb(8, 8, 8);
-    background-color: #ffffffc7;
+    background-color: #022a55;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     margin: 5px;
 }
+.botton {
+    padding-top: 80px;
+    font-size: 16px;
+    color: rgb(10, 0, 0);
+   background-image: url(../imagenes/int-ind-1.png);
+   background-repeat: no-repeat;
+   background-size: contain;
+   width:90px;  
+   height: 80px; 
+   text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+.columna {
+    width:50%;
+    display: flex;
+    
+  }
