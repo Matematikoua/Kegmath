@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Por partes</title>
+     <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="arch-aux/mi-estilo.css">
+      <style>
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #022a55;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .button:hover {
+            background-color: #022a55;
+        }
+        
+    </style>
+   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+   <script type="text/x-mathjax-config">
+      MathJax = {
+          tex: {
+              tags: 'ams'
+          }
+      };
+  </script>
+   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+   <script src="https://tikzjax.com/v1/tikzjax.js"></script>
+   <link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+</head>
+
+<body>
+    
+    <div class="encab">
+              <h1>Fracciones<br>Parciales</h1>
+    </div>
+    <hr>
+
+<div class="button3">
+            <h2><strong>Hay diversos métodos de uso, este es un enfoque personal!<strong></h2>
+</div>
+                <p> En algunos libros encontrarán este método usando limites y derivadas, la idea principal del enfoque personal 
+                    es no usar esto y ser netamente algebraico, usando herramientas y propiedades de los polinomios.
+                </p>
+           
+<hr>  
+        <div class="button2"><h2>Algo de teoría!</h2></div> 
+      <p>            
+        Se dice que una función racional \(\dfrac{P(x)}{Q(x)}\) es una <em>fracción propia</em>, si el grado del polinomio \(P(x)\)
+        es menor que el grado del polinomio \(Q(x) .\)  En caso contrario, es decir, si el grado de \(P(x)\) es mayor o igual
+         al de \(Q(x),\) la fracción se llama <em>impropia</em>.
+        </p>
+         <p> Toda fracción impropia se puede expresar, efectuando la división sintética, 
+            como la suma de un polinomio mas una fracción propia.  Esto es,
+            $$\begin{equation}\label{fracc-impro}
+              \tag{FPImp}  \frac{P(x)}{Q(x)}=\text{polinomio}+\frac{N_{1}(x)}{Q(x)},\quad \text{grado} N_{1}(x)<\text{grado}Q(x).
+            \end{equation}$$
+            </p>
+            <p>Por lo tanto, cuando se tengan integrales indefinidas \(\displaystyle\int\dfrac{P(x)}{Q(x)}\operatorname{d}\hspace{-1pt}x\) y
+                 la fracción \(\dfrac{P(x)}{Q(x)}\) sea impropia, entonces procedemos por división sintética
+                 como en la ecuación \(\eqref{fracc-impro}\) y resolvemos el par de integrales resultantes:
+                $$\displaystyle\int\dfrac{P(x)}{Q(x)}\operatorname{d}\hspace{-1pt}x=\int \text {polinomio}\,\operatorname{d}\hspace{-1pt}x+\int \dfrac{N_{1}(x)}{Q(x)}\operatorname{d}\hspace{-1pt}x.$$
+                A continuación ilustramos lo anterior con un ejemplo.  </p>
+              
+<hr>
+
+<hr>
+<div class="button3"><h2>Ahora ejemplos para practicar!</h2></div>
+<div class="button2">
+<h3>Ejemplo 1: Resolver \(\displaystyle\int\dfrac{x^{4}-6x^{3}+12x^{2}+6}{x^{3}-6x^{2}+12x-8}\operatorname{d}\hspace{-1pt}x.\)</h3>
+</div>   
+    <h4>  Solución:</h4>
+    <p>Observe que si hacemos la división sintética de \( x^{4}-6x^{3}+12x^{2}+6\) entre \( x^{3}-6x^{2}+12x-8\) se obtiene
+        $$\dfrac{x^{4}-6x^{3}+12x^{2}+6}{x^{3}-6x^{2}+12x-8}=x+\dfrac{8x+6}{x^{3}-6x^{2}+12x-8}=x+\dfrac{8x+6}{(x-2)^{3}}.$$
+        Por lo tanto
+      $$ \begin{align*}
+              \int\dfrac{x^{4}-6x^{3}+12x^{2}+6}{x^{3}-6x^{2}+12x-8}\operatorname{d}\hspace{-1pt}x&=\int x\operatorname{d}\hspace{-1pt}x+\int \dfrac{8x+6}{(\underbrace{x-2}_{{\color{red}u}})^{3}}\operatorname{d}\hspace{-1pt}x=\int x\operatorname{d}\hspace{-1pt}x+\int \dfrac{8(u+2)+6}{u^{3}}\operatorname{d}\hspace{-1pt}u\\
+      &=\int x\operatorname{d}\hspace{-1pt}x+\int \dfrac{8u+22}{u^{3}}\operatorname{d}\hspace{-1pt}u=\int x\operatorname{d}\hspace{-1pt}x+8\int \dfrac{\operatorname{d}\hspace{-1pt}u}{u^{2}}+22\int\dfrac{\operatorname{d}\hspace{-1pt}u}{u^{3}}\\
+      &=\dfrac{x^{2}}{2}-\dfrac{8}{u}-\dfrac{11}{u^{2}}+C\\
+      &=\dfrac{x^{2}}{2}-\dfrac{8}{x-2}-\dfrac{11}{(x-2)^{2}}+C.
+      \end{align*} $$
+    </p>
+    
+<hr>
+<div class="button3"><h2>Observación:</h2></div>
+<p>Notemos que hora el reto es buscar métodos para resolver integrales \(\displaystyle\int\dfrac{P(x)}{Q(x)}\operatorname{d}\hspace{-1pt}x\)
+para fracciones propias \(\dfrac{P(x)}{Q(x)}\). Anteriormente hemos visto un método
+para el caso particular de fracciones de la forma  \(\displaystyle\dfrac{mx+n}{ax^{2}+bx+c}\), en donde se completaba cuadrados,
+por tal motivo a continuación expresaremos el método de las fracciones parciales, una herramienta alternativa
+al anteriormente mencionado. Para ello, veremos algunos casos. 
+</p>
+
+<hr>
+<div class="button3">
+    <h2>Caso 1: El denominador \(Q(x)\) es un producto de factores lineales distintos</h2>
+</div>     
+   <p> Si \(Q\) es un polinomio que se escribe como:
+    $$
+    Q(x)=\left(a_{1} x+b_{1}\right)\left(a_{2} x+b_{2}\right) \cdots\left(a_{k} x+b_{k}\right)
+    $$
+    en donde no hay factor que se repita, entonces la idea principal es buscar constantes 
+    \(A_{1}, A_{2}, \cdots, A_{k}\) tales que:
+    $$\begin{equation}\label{fracc-par-1}
+   \tag{FPC1} \frac{P(x)}{Q(x)}=\frac{A_{1}}{a_{1} x+b_{1}}+\frac{A_{2}}{a_{2} x+b_{2}}+\cdots+\frac{A_{k}}{a_{k} x+b_{k}}.
+    \end{equation}$$
+    Para calcular dichos factores \(A_{1},A_{2},\ldots, A_{k}\) realizamos el siguiente procedimiento:
+    <ol>
+        <li> Primero multiplicamos toda la ecuación \(\eqref{fracc-par-1}\) por 
+        \(Q(x)=\left(a_{1} x+b_{1}\right)\left(a_{2} x+b_{2}\right) \cdots\left(a_{k} x+b_{k}\right)\)
+         y quitamos términos que aparecen multiplicando y dividiendo. Esto es, 
+        $$\begin{align}\label{paso-1-caso-1}
+        \tag{FPC1-1}P(x)&=\dfrac{A_{1}\left(a_{1} x+b_{1}\right)\left(a_{2} x+b_{2}\right) \cdots\left(a_{k} x+b_{k}\right)}{a_{1}x+b_{1}}+\dfrac{A_{2}\left(a_{1} x+b_{1}\right)\left(a_{2} x+b_{2}\right) \cdots\left(a_{k} x+b_{k}\right)}{a_{2}x+b_{2}}+\cdots
+    +\dfrac{A_{k}\left(a_{1} x+b_{1}\right)\left(a_{2} x+b_{2}\right) \cdots\left(a_{k} x+b_{k}\right)}{a_{k}x+b_{k}}\nonumber\\
+    &=\underbrace{A_{1}\left(a_{2} x+b_{2}\right) \cdots\left(a_{k} x+b_{k}\right)}_{{\color{red}\text{aquí no aparece \(\left(a_{1} x+b_{1}\right)\)}}}+A_{2}\underbrace{\left(a_{1} x+b_{1}\right)(a_{3}x+b_{3}) \cdots \left(a_{k} x+b_{k}\right)}_{{\color{red}\text{aquí no aparece \(\left(a_{2} x+b_{2}\right)\)}}}+\cdots+A_{k}\underbrace{\left(a_{2} x+b_{2}\right) \cdots\left(a_{k-1} x+b_{k-1}\right)}_{{\color{red}\text{aquí no aparece \(\left(a_{k} x+b_{k}\right)\)}}}.
+        \end{align}$$</li>
+        
+        <li> Para calcular \(A_{1}\), como a su lado no aparece \(\left(a_{1} x+b_{1}\right)\), si igualamos este último a \(0\), 
+            encontramos que esto sucede cuando \(x\) es \(x=-\dfrac{b_{1}}{a_{1}}\). Por tanto, reemplazamos \(x\) por este valor y
+             obtenemos el valor de \(A_{1}\) en la igualdad del ítem 1.</li>
+        <li>Para calcular \(A_{2}\), como a su lado no aparece \(\left(a_{2} x+b_{2}\right)\), si igualamos este último a \(0\), 
+            encontramos que esto sucede cuando \(x\) es \(x=-\dfrac{b_{2}}{a_{2}}\). Por tanto, reemplazamos \(x\) por este valor y
+             obtenemos el valor de \(A_{2}\) en la igualdad del ítem 1. Seguimos así hasta calcular todos los valores \(A_{k}\)'s.</li>
+        <li>Sustituimos los valores de 
+        \(A_{1}, A_{2},\ldots A_{k}\)  calculados anteriormente en \(\eqref{fracc-par-1}\) e integramos cada una de las integrales resultantes.</li>
+    </ol></p>
+
+<hr> 
+<hr>
+<div class="button3"><h2>Ahora ejemplos para practicar integración por Fraccions parciales!</h2></div>
+<div class="button2">
+<h3>Ejemplo 1: Resolver \(\displaystyle\int\dfrac{\operatorname{d}\hspace{-1pt}x}{(3x+1)(2x-5)}.\)</h3>
+</div>   
+    <h4>  Solución:</h4>
+    <p>Observe que la fracción \(\displaystyle\dfrac{1}{(3x+1)(2x-5)}\) es propia. Entonces la idea es buscar
+         constantes \(A\) y \(B\) tal que
+        $$\begin{equation}\label{frac-imp-ej-1}
+           \tag{FPC1-Ej1} \dfrac{1}{(3x+1)(2x-5)}=\dfrac{A}{3x+1}+\dfrac{B}{2x-5}.
+        \end{equation}$$
+        Observemos que \(Q(x)=(3x+1)(2x-5)\), por tanto al multiplicar la expresión 
+        \(\eqref{frac-imp-ej-1}\) por \(Q\) entonces obtenemos
+        $$\begin{align*}
+            1=A(2x-5)+B(3x+1).
+        \end{align*}$$
+        <ol>
+        <li> Si reemplazamos \(x=\dfrac{5}{2}\) obtenemos que \(B\left(\dfrac{15}{2}+1\right)=1\) y por tanto 
+            \(B=\dfrac{2}{17}\).</li> 
+        <li>Si reemplazamos \(x=-\dfrac{1}{3}\) obtenemos que \(A\left(-\dfrac{2}{3}-5\right)=1\) y por tanto
+         \(A=-\dfrac{3}{17}\).</li>
+        <li> Reemplazando los valores de \(A\) y \(B\) obtenemos
+        $$\begin{equation}\label{frac-imp-ej-1-1}
+        \tag{FPC1-Ej1-1}  \dfrac{1}{(3x+1)(2x-5)}=\dfrac{-(3/17)}{3x+1}+\dfrac{2/17}{2x-5}.
+        \end{equation}$$
+    </li>
+    </ol>
+        Usando la ecuación  \(\eqref{frac-imp-ej-1-1}\), por favor resolver la integrales resultantes:
+       $$\begin{align*}
+          \int\dfrac{\operatorname{d}\hspace{-1pt}x}{(3x+1)(2x-5)}&=\int\left(\dfrac{-(3/17)}{3x+1}+\dfrac{2/17}{2x-5}\right)\operatorname{d}\hspace{-1pt}x=  \int \dfrac{-(3/17)}{3x+1}\operatorname{d}\hspace{-1pt}x+\int\dfrac{2/17}{2x-5}\operatorname{d}\hspace{-1pt}x\\
+          &=-\dfrac{1}{17}\ln\big|3x+1\big|+\dfrac{1}{17}\ln\big|2x-5\big|=\dfrac{1}{17}\ln\left|\dfrac{2x-5}{3x+1}\right|.
+        \end{align*}$$
+    </p>
+    
+<hr>   
+
+<div class="button3"> 
+    <h2>A continuación algunos vídeos del caso 1 de integración por partes: </h2>
+</div>
+<hr>
+<div class="video-grid">
+    <div class="video-container">
+        <iframe width="1280" height="720" src="https://www.youtube.com/embed/uwDKdolLkns" title="Integración por fracciones parciales | Los cuatro casos Introducción" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="video-container">
+        <iframe width="667" height="375" src="https://www.youtube.com/embed/TvZuD7-cEjU" title="Integración por fracciones parciales | Ejemplo 4 Factores lineales diferentes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</div>
+
+<div class="video-grid">
+    <div class="video-container">
+        <iframe width="667" height="375" src="https://www.youtube.com/embed/zTT-tZvYeOE" title="Integración por fracciones parciales | Ejemplo 5 Factores lineales diferentes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="video-container">
+        <iframe width="667" height="375" src="https://www.youtube.com/embed/fSmigj6I5cQ?list=PL9SnRnlzoyX1Kmq4ZgZBGYdf9JyGCsVDw" title="264. Integral mediante fracciones parciales: factores lineales distintos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</div>
+
+<div class="video-grid">
+    <div class="video-container">
+        <iframe width="667" height="375" src="https://www.youtube.com/embed/WuSokpI-4RQ?list=PL9SnRnlzoyX1Kmq4ZgZBGYdf9JyGCsVDw" title="265. Integral mediante fracciones parciales: factores lineales distintos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="video-container">
+        <iframe width="667" height="375" src="https://www.youtube.com/embed/Or0EWnRhICE?list=PL9SnRnlzoyX1Kmq4ZgZBGYdf9JyGCsVDw" title="Integral mediante fracciones parciales (dx entre polinomio de tercer grado, factorizando)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</div>
+
+<hr>
+<div class="button3">
+    <h2>Caso \(2\): El denominador \(Q(x)\) es un producto de factores lineales, algunos de los cuales se repiten.</h2>
+</div> 
+<div class="button3">
+    <h1>Ir al siguiente método de integración</h1>
+</div>
+<button class="button" onclick="window.location.href='partes.html'">Regresar a Integración por partes</button>
+<button class="button" onclick="window.location.href='metodos-int.html'">Regresar al tema de Métodos de Integración</button> 
+<a href="https://sites.google.com/view/kegmath/cursos?authuser=0" class="button4"><i class="fas fa-home"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+    <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
+    <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"/>
+  </svg></a> 
+
+<hr>
+   <footer>
+        <p>&copy; "Work hard in silence, let success make the noise" </p> 
+        <p>― Frank Ocean</p>
+    </footer>
+</body>
+</html>
