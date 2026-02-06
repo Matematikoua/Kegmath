@@ -147,7 +147,7 @@ function CongressList() {
                     <p className="text-[var(--text-secondary)] mb-1">{congress.location}</p>
                     <div className="flex justify-between items-center text-sm">
                       <span className="text-[var(--text-secondary)]">{congress.year}</span>
-                      <span className="px-3 py-1 bg-[var(--secondary-color)] bg-opacity-10 text-[var(--secondary-color)] rounded-full font-semibold">
+                      <span className="px-3 py-1 bg-[var(--secondary-color)] bg-opacity-10 text-white rounded-full font-semibold">
                         {congress.participation}
                       </span>
                     </div>
@@ -168,7 +168,7 @@ function CongressList() {
                     <p className="text-[var(--text-secondary)] mb-1">{congress.location}</p>
                     <div className="flex justify-between items-center text-sm">
                       <span className="text-[var(--text-secondary)]">{congress.year}</span>
-                      <span className="px-3 py-1 bg-[var(--secondary-color)] bg-opacity-10 text-[var(--secondary-color)] rounded-full font-semibold">
+                      <span className="px-3 py-1 bg-[var(--secondary-color)] bg-opacity-10 text-white rounded-full font-semibold">
                         {congress.participation}
                       </span>
                     </div>
