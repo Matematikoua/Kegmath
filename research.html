@@ -4,31 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Matematikoua - Investigación y Educación</title>
-    <meta name="description" content="Sitio web profesional de investigación matemática, cursos académicos y servicios de tutoría personalizada.">
-    <meta name="keywords" content="matemáticas, investigación, cursos, tutorías, clases personalizadas">
+    <title>Investigaciones - Dr. Matemático</title>
+    <meta name="description" content="Publicaciones científicas, tesis dirigidas y participación en congresos del Dr. Matemático">
+    <meta name="keywords" content="investigaciones matemáticas, publicaciones, tesis, congresos">
     
-    <meta property="og:title" content="Matematikoua">
-    <meta property="og:description" content="Sitio web profesional de investigación matemática, cursos académicos y servicios de tutoría personalizada.">
-    <meta name="twitter:title" content="Matematikoua">
-    <meta name="twitter:description" content="Sitio web profesional de investigación matemática, cursos académicos y servicios de tutoría personalizada.">
-     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-   <script type="text/x-mathjax-config">
-       MathJax = {
-           tex: {
-               tags: 'ams'
-           }
-       };
-   </script> 
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="https://unpkg.com/asciimath2tex@1.2.1/dist/asciimath2tex.umd.js"></script>
+    <meta property="og:title" content="Investigaciones - Dr. Matemático">
+    <meta property="og:description" content="Publicaciones científicas, tesis dirigidas y participación en congresos">
+    <meta name="twitter:title" content="Investigaciones - Dr. Matemático">
+    <meta name="twitter:description" content="Publicaciones científicas, tesis dirigidas y participación en congresos">
+
     <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
     <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
     <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
     <style type="text/tailwindcss">
     @layer theme {
         :root {
@@ -69,17 +59,16 @@
         }
     }
     </style>
+
 </head>
 <body>
     <div id="root"></div>
     <script type="text/babel" src="components/Header.js"></script>
-    <script type="text/babel" src="components/Hero.js"></script>
-    <script type="text/babel" src="components/About.js"></script>
-    <script type="text/babel" src="components/ResearchPreview.js"></script>
-    <script type="text/babel" src="components/CoursesPreview.js"></script>
-    <script type="text/babel" src="components/TutoringSection.js"></script>
-    <script type="text/babel" src="components/ContactSection.js"></script>
     <script type="text/babel" src="components/Footer.js"></script>
-    <script type="text/babel" src="app.js"></script>
+    <script type="text/babel" src="components/ResearchHero.js"></script>
+    <script type="text/babel" src="components/ResearchLines.js"></script>
+    <script type="text/babel" src="components/ThesisList.js"></script>
+    <script type="text/babel" src="components/CongressList.js"></script>
+    <script type="text/babel" src="research-app.js"></script>
 </body>
 </html>
