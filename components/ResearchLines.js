@@ -185,7 +185,7 @@ function ResearchLines() {
                           </div>
                         </div>
                         <div className="w-10 h-10 bg-[var(--accent-color)] bg-opacity-10 rounded-lg flex items-center justify-center flex-shrink-0 ml-4">
-                          <span className="icon-file-text text-lg text-[var(--accent-color)]"></span>
+                          <span className="icon-file-text text-lg text-white"></span>
                         </div>
                       </div>
                     </div>
