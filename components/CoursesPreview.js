@@ -6,7 +6,7 @@ function CoursesPreview() {
         title: "Cálculo diferencial e integral",
         level: "pregrado",
         duration: "16 semanas",
-        icon: <div className="text-[18px] text-white"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi> &#8747;</mi><mi>f(</mi><mi>x</mi><mi>)d</mi><mi>x</mi></math></div>,
+        icon: <div className="text-[16px] text-white"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi> &#8747;</mi><mn mathvariant="italic">f(x)dx</mn></math></div>,
       },
       {
         id: 2,
