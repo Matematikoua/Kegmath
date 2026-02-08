@@ -18,7 +18,7 @@ function Header() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <div className="w-40 h-10 bg-[var(--primary-color)] rounded-lg flex items-center justify-center">
-                <div className="text-[30px] text-white"><math display="block"><mn mathvariant="fraktur"> &#8750;&kappa;egmath</mn><mi></mi></math></div>
+                <div className="text-[25px] text-white"><math display="block"><mn> &#8750;&kappa;egmath</mn><mi></mi></math></div>
               </div>
               <span className="ml-3 text-xl font-bold text-[var(--primary-color)]">Bienvenidos!</span>
             </div>

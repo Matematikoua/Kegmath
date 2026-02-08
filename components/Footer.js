@@ -7,7 +7,7 @@ function Footer() {
             <div>
               <div className="flex items-center mb-4">
                 <div className="w-40 h-10 bg-white rounded-lg flex items-center justify-center">
-                  <div className=" text-xl text-[var(--primary-color)]"><math display="block"><mn mathvariant="fraktur"> &#8750;&kappa;egmath</mn><mi></mi></math></div>
+                  <div className=" text-xl text-[var(--primary-color)]"><math display="block"><mn> &#8750;&kappa;egmath</mn><mi></mi></math></div>
                 </div>
                 <span className="ml-3 text-xl font-bold">Esmeral García, kevin Ph.D.</span>
               </div>

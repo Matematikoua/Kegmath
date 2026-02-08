@@ -157,7 +157,7 @@ function CoursesCatalog() {
         title: "Teoría de Integración de Riemann-Stieltjes",
         level: "Avanzado",
         duration: "16 semanas",
-        icon: <div className="text-[20px] text-white"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn mathvariant="fraktur"> &#8747;&kappa;d&#945;</mn></math></div>,
+        icon: <div className="text-[20px] text-white"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn> &#8747;&kappa;d&#945;</mn></math></div>,
         url: "https://drive.google.com/file/d/1V4FhQkZYn9eQlV6mQOrGA6ndYEz8Apyc/view",
         description: "Integral de Riemann-Stieltjes, propiedades y aplicaciones en análisis"
       },
@@ -175,7 +175,7 @@ function CoursesCatalog() {
         title: "Teoría de la Medida",
         level: "Avanzado",
         duration: "16 semanas",
-        icon: <div className="text-[22px] text-white"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn mathvariant="fraktur"> &#8747;&kappa;d&#956;</mn></math></div>,
+        icon: <div className="text-[22px] text-white"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn> &#8747;&kappa;d&#956;</mn></math></div>,
         url: "https://editorial.uptc.edu.co/gpd-notas-de-clase-9789586608435-664d06a5e6af2.html",
         description: "Espacios de medida, integración de Lebesgue y teoremas de convergencia"
       },
@@ -215,7 +215,7 @@ function CoursesCatalog() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {courses.map(course => (
               <div key={course.id} className="card">
-                <div className="w-16 h-16 bg-[var(--secondary-color)] bg-opacity-10 rounded-xl flex items-center justify-center mb-4">
+                <div className="w-20 h-20 bg-[var(--secondary-color)] bg-opacity-10 rounded-xl flex items-center justify-center mb-4">
                   <div className={`text-3xl text-[var(--primary-color)] `}><mn>{course.icon}</mn></div>
                 </div>
                 <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold mb-3 ${getLevelColor(course.level)}`}>
