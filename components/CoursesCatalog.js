@@ -6,9 +6,8 @@ function CoursesCatalog() {
         title: "Matemáticas Básicas",
         level: "Básico",
         duration: "16 semanas",
-        icon: <div className="text-[9px] text-white"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi>
-    <mo>=</mo>
-    <mfrac>
+        icon: <div className="text-[9px] text-white"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x=</mi>
+     <mfrac>
         <mrow>
             <mo form="prefix">−</mo> <mi>b</mi> <mo>±</mo>
             <msqrt>
@@ -55,7 +54,7 @@ function CoursesCatalog() {
         title: "Cálculo Integral",
         level: "Intermedio",
         duration: "12 semanas",
-        icon: <div className="text-[18px] text-white"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi> &#8747;</mi><mi>f(</mi><mi>x</mi><mi>)d</mi><mi>x</mi></math></div>,
+        icon: <div className="text-[18px] text-white"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi> &#8747;</mi><mn mathvariant="italic">f(x)dx</mn></math></div>,
         url: "calculointegral.html",
         description: "Integrales definidas e indefinidas, técnicas de integración y aplicaciones"
       },
@@ -184,7 +183,7 @@ function CoursesCatalog() {
         title: "Teoría de Operadores en Espacios de Funciones Analíticas",
         level: "Especialización",
         duration: "16 semanas",
-        icon: <div className="text-[20px] text-white"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>&#8750;</mi><mi>f(z)dz</mi></math></div>,
+        icon: <div className="text-[20px] text-white"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>&#8750;</mi><mn mathvariant="italic">f(z)dz</mn></math></div>,
         url: "https://drive.google.com/file/d/1PqvxyjBFd6EL0GmaBmHRzgNPJGjE99BN/view?usp=sharing",
         description: "Operadores de composición, multiplicación en espacios de Hardy y Bergman"
       },
