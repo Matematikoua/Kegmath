@@ -25,7 +25,7 @@ Actualmente soy docente tiempo completo y el líder del Grupo de Investigación 
               <div className="space-y-4">
                 <div className="flex items-start">
                   <div className="w-12 h-12 bg-[var(--secondary-color)] bg-opacity-10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <div className="icon-graduation-cap text-xl text-[var(--secondary-color)]"></div>
+                    <div className="icon-graduation-cap text-xl text-white"></div>
                   </div>
                   <div className="ml-4">
                     <h4 className="font-semibold text-lg mb-1">Formación Académica</h4>
@@ -35,7 +35,7 @@ Actualmente soy docente tiempo completo y el líder del Grupo de Investigación 
                 
                 <div className="flex items-start">
                   <div className="w-12 h-12 bg-[var(--secondary-color)] bg-opacity-10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <div className="icon-award text-xl text-[var(--secondary-color)]"></div>
+                    <div className="icon-award text-xl text-white"></div>
                   </div>
                   <div className="ml-4">
                     <h4 className="font-semibold text-lg mb-1">Experiencia Investigativa</h4>
@@ -46,7 +46,7 @@ Actualmente soy docente tiempo completo y el líder del Grupo de Investigación 
                 
                 <div className="flex items-start">
                   <div className="w-12 h-12 bg-[var(--secondary-color)] bg-opacity-10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <div className="icon-users text-xl text-[var(--secondary-color)]"></div>
+                    <div className="icon-users text-xl text-white"></div>
                   </div>
                   <div className="ml-4">
                     <h4 className="font-semibold text-lg mb-1">Experiencia docente</h4>
