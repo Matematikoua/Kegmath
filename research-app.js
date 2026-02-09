@@ -39,6 +39,7 @@ function ResearchApp() {
         <ResearchLines />
         <ThesisList />
         <CongressList />
+        <GruposInves />
         <Footer />
       </div>
     );

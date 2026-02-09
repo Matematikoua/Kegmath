@@ -35,7 +35,7 @@ Actualmente soy docente tiempo completo y el líder del Grupo de Investigación 
                 
                 <div className="flex items-start">
                   <div className="w-12 h-12 bg-[var(--secondary-color)] bg-opacity-10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <div className="icon-award text-xl text-white"></div>
+                    <div className="icon-book-open  text-xl text-white"></div>
                   </div>
                   <div className="ml-4">
                     <h4 className="font-semibold text-lg mb-1">Experiencia Investigativa</h4>
@@ -46,11 +46,11 @@ Actualmente soy docente tiempo completo y el líder del Grupo de Investigación 
                 
                 <div className="flex items-start">
                   <div className="w-12 h-12 bg-[var(--secondary-color)] bg-opacity-10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <div className="icon-users text-xl text-white"></div>
+                    <div className="icon-building text-xl text-white"></div>
                   </div>
                   <div className="ml-4">
                     <h4 className="font-semibold text-lg mb-1">Experiencia docente</h4>
-                    <p className="text-[var(--text-secondary)]">He trabajado como docente en diferentes instituciones de educación superior, impartiendo cursos de matemáticas a nivel de pregrado y posgrado. Mi enfoque pedagógico se centra en la claridad conceptual y el desarrollo del pensamiento crítico en mis estudiantes.</p>
+                    <p className="text-[var(--text-secondary)]">He trabajado como docente en diferentes instituciones de educación superior tales como la Universidad Nacional de Colombia, sede Manizales, Universidad Pedagógica y Tecnológica de Colombia (UPTC) y  Universidad de Sucre,  en todas ellas impartiendo cursos de matemáticas a nivel de pregrado y posgrado. Mi enfoque pedagógico se centra en la claridad conceptual y el desarrollo del pensamiento crítico en mis estudiantes. Actualmente soy docente tiempo completo en la Universidad de Caldas en Manizales, Colombia.</p>
                   </div>
                 </div>
               </div>
