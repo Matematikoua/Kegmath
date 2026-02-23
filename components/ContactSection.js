@@ -24,6 +24,10 @@ function ContactSection() {
       const mailtoLink = `mailto:${recipient}?subject=${subject}&body=${body}`;
 
       // Simulating a delay for UX, then opening the mail client
+      let link = document.createElement('a');
+      link.href = mailtoLink;
+      link.textContent = 'Contáctanos por Email';
+      document.body.appendChild(link);
       setTimeout(() => {
         window.location.href = mailtoLink;
         setStatus('success');

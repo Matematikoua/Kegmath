@@ -9,8 +9,12 @@ function Hero() {
                 Esmeral García, Kevin Ph.D.
               </h1>
               <p className="text-xl mb-8 text-blue-100">
-                <p>Profesor Asociado, Departamento de Matemáticas, Facultad de Ciencias Exactas y Naturales, Universidad de Caldas</p>
-                <p>Líder del Grupo de Investigación en Estadística y Matemáticas. Investigador senior, según convocatoria MINCIENCIAS 2024.</p>
+                <p>Profesor Asociado del Departamento de Matemáticas,</p>
+                <p>Líder del Grupo de Investigación en Estadística y Matemáticas.</p>
+                <p>Facultad de Ciencias Exactas y Naturales,</p>
+                <p>Universidad de Caldas, Manizales, Colombia.</p>
+                <p>Par evaluador de MinCiencias.</p>
+                <p>Investigador senior, según convocatoria MinCiencias 2024.</p>
               </p>
               <div className="flex flex-wrap gap-4">
                 <a href="research.html" className="btn-primary bg-white text-[var(--primary-color)] hover:bg-gray-100">
