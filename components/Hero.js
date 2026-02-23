@@ -27,8 +27,8 @@ function Hero() {
             </div>
             <div className="hidden md:flex justify-center">
               <div className="w-64 h-64 bg-white bg-opacity-10 rounded-full flex items-center justify-center backdrop-blur-sm">
-                <div className="text-[95px] text-white"><div className="image-container">
-            <img src= 'foto-tomada-por-dany-en-mex.jpg' alt="Foto en mex al fondo indios verdes" className="rounded-full w-110 h-110 object-cover"/>
+                <div className="text-[105px] text-white"><div className="image-container">
+            <img src= 'foto-tomada-por-dany-en-mex.jpg' alt="Foto en mex al fondo indios verdes" className="w-150 h-110 object-cover"/>
         </div></div>
               </div>
             </div>
