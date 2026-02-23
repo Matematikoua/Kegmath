@@ -43,14 +43,14 @@ function ResearchLines() {
           },
           {
             id: 6,
-            title: "Frames of subspaces in Hilbert spaces with W--metrics",
+            title: "Frames of subspaces in Hilbert spaces with W-metrics",
             journal: "Analele Stiintifice ale Universitatii Ovidius Constanta, Seria Matematica",
             year: "2015",
             doi: "10.1515/auom-2015-0021"            
           },
           {
             id: 7,
-            title: "Frames in Krein spaces arising from a non-regular -metric",
+            title: "Frames in Krein spaces arising from a non-regular W-metric",
             journal: "Banach Journal of Mathematical Analysis",
             year: "2015",
             doi: "10.15352/bjma/09-1-1"            
