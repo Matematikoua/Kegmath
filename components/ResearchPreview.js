@@ -3,7 +3,7 @@ function ResearchPreview() {
     const featuredResearch = [
       {
         id: 1,
-        title: "Frames in Krein spaces arising from a non-regular -metric",
+        title: "Frames in Krein spaces arising from a non-regular W-metric",
         journal: "Banach Journal of Mathematical Analysis",
         year: "2015",
         visita : "https://scholar.google.com/scholar?cites=8851253150789622794&as_sdt=2005&sciodt=0,5&hl=es",
