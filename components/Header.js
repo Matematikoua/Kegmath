@@ -27,6 +27,7 @@ function Header() {
               <button onClick={() => navigateToSection('inicio')} className="text-[var(--text-primary)] hover:text-[var(--primary-color)] transition-colors">Inicio</button>
               <button onClick={() => navigateToSection('sobre-mi')} className="text-[var(--text-primary)] hover:text-[var(--primary-color)] transition-colors">Sobre Mí</button>
               <a href="research.html" className="text-[var(--text-primary)] hover:text-[var(--primary-color)] transition-colors">Investigaciones</a>
+              <a href="red_acad_mica_nacional_e_internacional.html" className="text-[var(--text-primary)] hover:text-[var(--primary-color)] transition-colors">Red Académica</a>
               <a href="courses.html" className="text-[var(--text-primary)] hover:text-[var(--primary-color)] transition-colors">Cursos</a>
               <a href="Material.html" className="text-[var(--text-primary)] hover:text-[var(--primary-color)] transition-colors">Material Didáctico</a>
               <button onClick={() => navigateToSection('tutorias')} className="text-[var(--text-primary)] hover:text-[var(--primary-color)] transition-colors">Tutorías</button>
@@ -45,6 +46,7 @@ function Header() {
               <button onClick={() => navigateToSection('inicio')} className="block w-full text-left py-2 text-[var(--text-primary)] hover:text-[var(--primary-color)]">Inicio</button>
               <button onClick={() => navigateToSection('sobre-mi')} className="block w-full text-left py-2 text-[var(--text-primary)] hover:text-[var(--primary-color)]">Sobre Mí</button>
               <a href="research.html" className="block py-2 text-[var(--text-primary)] hover:text-[var(--primary-color)]">Investigaciones</a>
+              <a href="red_acad_mica_nacional_e_internacional.html" className="block py-2 text-[var(--text-primary)] hover:text-[var(--primary-color)]">Red Académica</a>
               <a href="courses.html" className="block py-2 text-[var(--text-primary)] hover:text-[var(--primary-color)]">Cursos</a>
               <button onClick={() => navigateToSection('tutorias')} className="block w-full text-left py-2 text-[var(--text-primary)] hover:text-[var(--primary-color)]">Tutorías</button>
               <button onClick={() => navigateToSection('contacto')} className="block w-full text-left py-2 text-[var(--text-primary)] hover:text-[var(--primary-color)]">Contacto</button>
