@@ -65,9 +65,9 @@ function ResearchLines() {
           {
             id: 1,
             title: "Constructive approximation of convergent sequences by eigenvalue sequences of radial Toeplitz-Fock operators",
-            journal: "Por publicar. Este ha sido aceptado en el Boletin de la Sociedad Matemática Mexicana",
+            journal: "Bol. Soc. Mat. Mex. 32, 103",
             year: "2026",
-            doi: "https://arxiv.org/abs/2503.23276"
+            doi: "10.1007/s40590-026-00879-0"
           },
           {
             id: 2,
